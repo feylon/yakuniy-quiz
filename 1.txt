@@ -1,1403 +1,874 @@
-
-$CATEGORY: Mashinali o'qitish		
-
-Sun’iy intellekti bo’lmagan elementni ko’rsating{
-=Hub
-~Kalkulyator
-~Telefon
-~Foto Radar
-}
-
-Mashinali o’qitish va suniy intellekt{
-=Mashinali o’qitish sun’iy intellekt tizimlarini ishlab chiqishga xizmat qiladi
-~Bir tushunchani ifodalaydi
-~Sun’iy intellekt mashinali o’qitish tizimlarini ishlab chiqishga xizmat qiladi
-~Turli tushunchalarni ifodalaydi
-}
-
-Mashinali o’qitishning asosiy turlari qaysilar{
-=O’qituvchili,O’qituvchisiz
-~Regressiya,Sinflashtirish
-~KNN,SVM,Kmaens
-~Logistik va chiziqli regressiya
-}
-
-Mashinali o’qitishning o’qituvchili sinflashtirish algoritmini ko’rsating{
-=KNN,SVM,Logistik regresiya
-~Kmaens
-~Chiziqli regressiya
-~Kmaens,KNN
-}
-
-Supervised learning ?{
-=bu modelni xususiyatlari  aniq bo’lgan  ma’lumotlar bilan  o’qitish
-~bu modelni xususiyatlari aniq  bo’lmagan ma’lumotlar  bilan  o’qitish
-~bu modelni  ham aniq ham aniq  bo’lmagan xususiyatli  ma’lumotlar bilan  o’qitishdir.
-~bu  o’qitishning mukammal  usuli bo’lib, bunda  model o’zini-o’zi qayta  o’qitish va natijalarni  yaxshilash imkoniyatiga  ega bo’ladi.
-}
-
-Unsupervised learning ?{
-=bu modelni xususiyatlari aniq  bo’lmagan ma’lumotlar  bilan  o’qitish
-~bu modelni xususiyatlari  aniq bo’lgan  ma’lumotlar bilan  o’qitish
-~bu modelni  ham aniq ham aniq  bo’lmagan xususiyatli  ma’lumotlar bilan  o’qitishdir.
-~bu  o’qitishning mukammal  usuli bo’lib, bunda  model o’zini-o’zi qayta  o’qitish va natijalarni  yaxshilash imkoniyatiga  ega bo’ladi.
-}
-
-Semi- supervised learning{
-=bu modelni  ham aniq ham aniq  bo’lmagan xususiyatli  ma’lumotlar bilan  o’qitishdir.
-~bu modelni xususiyatlari aniq  bo’lmagan ma’lumotlar  bilan  o’qitish
-~bu modelni xususiyatlari  aniq bo’lgan  ma’lumotlar bilan  o’qitish
-~bu  o’qitishning mukammal  usuli bo’lib, bunda  model o’zini-o’zi qayta  o’qitish va natijalarni  yaxshilash imkoniyatiga  ega bo’ladi.
-}
-
-Reinforcement learning ?{
-=bu  o’qitishning mukammal  usuli bo’lib, bunda  model o’zini-o’zi qayta  o’qitish va natijalarni  yaxshilash imkoniyatiga  ega bo’ladi.
-~bu modelni xususiyatlari aniq  bo’lmagan ma’lumotlar  bilan  o’qitish
-~bu modelni  ham aniq ham aniq  bo’lmagan xususiyatli  ma’lumotlar bilan  o’qitishdir.
-~bu modelni xususiyatlari  aniq bo’lgan  ma’lumotlar bilan  o’qitish
-}
-
-O’qitishning mukammal  usuli bo’lib, bunda  model o’zini-o’zi qayta  o’qitish va natijalarni  yaxshilash imkoniyatiga  ega bo’ladi.{
-=Reinforcement learning
-~Semi-supervised learning
-~Supervised learning
-~Unsupervised learning
-}
-
-Modelni  ham aniq ham aniq  bo’lmagan xususiyatli  ma’lumotlar bilan  o’qitishdir.{
-=Semi-supervised learning
-~Reinforcement learning
-~Unsupervised learning
-~Supervised learning
-}
-
-Modelni xususiyatlari  aniq bo’lgan  ma’lumotlar bilan  o’qitish{
-=Supervised learning
-~Semi-supervised learning
-~Reinforcement learning
-~Unsupervised learning
-}
-
-Modelni xususiyatlari aniq  bo’lmagan ma’lumotlar  bilan  o’qitish{
-=Unsupervised learning
-~Supervised learning
-~Semi-supervised learning
-~Reinforcement learning
-}
-
-Mashinali o’qitishda asosan qaysi instrumental vositalardan foydalaniladi{
-=Python, Matlab, Octave
-~Python,NLP,Keras
-~Numpy,Pandas
-~Python,Keras,Pandas
-}
-
-KNN bu - …{
-=Barchasi to’gri
-~Klasterlash algoritmi
-~Regressiya algoritmi
-~Sinflashrirish algoritmi
-}
-
-Bir o’zgaruvchili chiziqli regressiya bu - ….{
-=Bashoratlash uchun obyektni xarakterlovchi bitta xususiyatini olib bashoratlashga xizmat qiladigan model yaratish
-~Bashoratlash uchun obyektni xarakterlovchi ko’p sondagi xususiyatlarini olib bashoratlashga xizmat qiladigan model yaratish
-~Siflashtirish uchun obyektni xarakterlovchi bitta xususiyatini olib siflashtirishga xizmat qiladigan model yaratish
-~Siflashtirish uchun obyektni xarakterlovchi ko’p sondagi xususiyatlarini olib siflashtirishga xizmat qiladigan model yaratish
-}
-
-Ko’p o’zgaruvchili chiziqli regressiya bu -...{
-=Bashoratlash uchun obyektni xarakterlovchi ko’p sondagi xususiyatlarini olib bashoratlashga xizmat qiladigan model yaratish
-~Bashoratlash uchun obyektni xarakterlovchi bitta xususiyatini olib bashoratlashga xizmat qiladigan model yaratish
-~Siflashtirish uchun obyektni xarakterlovchi bitta xususiyatini olib siflashtirishga  xizmat qiladigan model yaratish
-~Siflashtirish uchun obyektni xarakterlovchi ko’p sondagi xususiyatlarini olib siflashtirishga xizmat qiladigan model yaratish
-}
-
-Logistik regressiya bu?{
-=Regression tahlil asosida sinflashtirish masalasini yechish
-~Regression tahlil asosida klasterlash  masalasini yechish
-~Regression tahlil asosida bashoratlash masalasini yechish
-~To’g’ri javob yo’q
-}
-
-Chiziqli va logistic regressiyaning asosiy farqi{
-=Bu ikkalasi ikki turdagi masalani ishlaydi. chiziqli  regressiya basharotlash, logistic regressiya sinflashtirish
-~Bu ikkalasi ikki turdagi masalani ishlaydi. chiziqli  sinflashtirish basharotlash, logistic regressiya regressiya
-~Ikkalasi ham bir turdagi masalani ishlash uchun mo’ljallangan
-~To’g’ri javob yo’q
-}
-
-Python dasturlash tilida ma’lumotlarni visuallashtirish uchun ishlatiladigan kutubxona{
-=Matplotlib
-~plotData
-~Pillow
-~PyPlot
-}
-
-Python dasturlash tilida quyidagi kod qanday natija qaytaradi:		>>i=10		>>i++		>>print(i){
-=Xatolik sodir bo’ladi.
-~0
-~9
-~i++
-}
-
-Python dasturlash tilida quyidagi kod qanday natija qaytaradi:		>>a=[0,2,5,7,8]		>>b=a[1:3]		>>print(b){
-=[2,5]
-~[0,2,5]
-~[1,2,5,7]
-~[4,5]
-}
-
-Python dasturlash tilida quyidagi kod qanday natija qaytaradi:		>>k=55//10		>>print(‘k’){
-=k
-~05.май
-~Xatolik sodir bo’ladi
-~5
-}
-
-Python dasturlash tilida quyidagi kod qanday natija qaytaradi:		>>a=[0,4,5,7,8,9,3]		>>b=a[-2]		>>print(b){
-=9
-~8
-~[0,4,5]
-~[3,9,8]
-}
-
-Numpy kutubxonasida ikkita vektorni skalyar ko’paytirish amali qanaqa?{
-=A*B
-~A@B
-~np.multiply([A,B])
-~np.dot([a,b])
-}
-
-Numpy kutubxonasida ikkita vektorni vektor ko’paytirish amali qanaqa?{
-=A@B
-~A*B
-~np.dot([A,B])
-~np.multiply([A,B])
-}
-
-Pythonda ikkita vektorni birlashtirishda xatolik sodir bo’ladigan javobni tanlang{
-=a=append(a,b)
-~a=np.append(a,b)
-~a=np.append(b,a)
-~Varinatlarning barchasida vektorlar birlashtiriladi
-}
-
->>a=[1,5,’ML’,False]		>>print(type(a)){
-=<class 'list'>
-~<class ‘tuple’ >
-~<class ‘array’>
-~<class 'dec'>
-}
-
-Cost funksiya bu?{
-=Modelni o’qitish davrida model tomonidan topilgan qiymat bilan o’rgatuvchi tanlamada berilgan qiymat oralidagi farqlarni hisoblash funksiyasi
-~Cosinius funksiyasini qisqartma ko’rinishi?
-~Bunday nomdagi funksiya yo’q.
-~Modelni testlash davrida model tomonidan topilgan qiymat bilan o’rgatuvchi tanlamada berilgan qiymat oralidagi farqlarni hisoblash funksiyasi
-}
-
-Chiziqli regression model nechta qiymat qaytaradi{
-=Har doim bitta
-~Ixtiyoriy ravishdagi sonda qiymat qaytarishi mumkin
-~Har doim bittadan ko’p
-~To’g’ri javob yo’q
-}
-
-QR code mashinali o’qitilish algoritmi asosida ishlab chiqilgan ?{
-=Noto’g’ri,
-~To’g’ri
-~Bo’lishi mumkin
-~Bilmayman
-}
-
-Gradient tushish bu?{
-=Model parametrlarini sozlash uchun ishlatiladigan algoritm
-~Xatolik funksiyasi
-~Kiruvchi ma’lumotlarni narmallashtirish uchun qiymatlarni 0,1oraliqqa tushirish
-~Mashinali o’qitish turi
-}
-
-O’qitish jarayonida regulyarizatsiyalash bu?{
-=Modelni o’qitish jarayonida ortiqcha paramertlardan ozod qilish, qisqartirish
-~Barcha javob to’g’ri
-~Modelni testlash jarayonida ortiqcha paramertlardan ozod qilish, qisqartirish
-~Modelni qurish jarayonida ortiqcha paramertlardan ozod qilish, qisqartirish
-}
-
-Modelni qurishda bo’ladigan Underfitting muammosi bu?{
-=Model train to’plmada ham, test to’plamda ham yuqori aniqlik bermaydi. Model sodda tuzilgan.
-~Model train to’plmada ham, test to’plamda ham yuqori aniqlik bermaydi. Model murakkab tuzilgan.
-~Model train to’plmada yuqori, test to’plamda esa past aniqlik beradi. Model sodda tuzilgan.
-~Model train to’plmada yuqori, test to’plamda esa past aniqlik beradi. Model murakkab tuzilgan.
-}
-
-Model qurishda bo’ladigan Owerfitting muammosi bu?{
-=Rasmlarni joylashtirish uchun
-~Ma’lumotlarni jadval ko‘rinishida chop etish uchun
-~Audioma’lumotlarni joylashtirish uchun
-~Matnli ma’lumotlarni joylashtirish uchun
-}
-
-Mobil ilovadagi element ustiga sichqoncha chap tugmasi bilan bosilganda qaysi metod ishga tushadi?{
-=Model train to’plamda yuqori, test to’plamda esa past aniqlik beradi. Model murakkab tuzilgan.
-~Model train to’plamda ham, test to’plamda ham yuqori aniqlik bermaydi. Model sodda tuzilgan.
-~Model train to’plamda ham, test to’plamda ham yuqori aniqlik bermaydi. Model murakkab tuzilgan.
-~Model train to’plamda yuqori, test to’plamda esa past aniqlik beradi. Model sodda tuzilgan.
-}
-
-Bias tushunchasi?{
-=Modelni train to’plam bilan testlaganda bo’ladigan xatolik
-~Modelni test to’plam bilan testlaganda bo’ladigan xatolik
-~Modelni train + test to’plam bilan testlaganda bo’ladigangadi umumiy xatolik
-~Modelni validation to’plam bilan testlaganda bo’ladigangadi umumiy xatolik
-}
-
-Variance tushunchasi?{
-=Modelni test to’plam bilan testlaganda bo’ladigan xatolik
-~Modelni train to’plam bilan testlaganda bo’ladigan xatolik
-~Modelni train + test to’plam bilan testlaganda bo’ladigangadi umumiy xatolik
-~Modelni validation to’plam bilan testlaganda bo’ladigangadi umumiy xatolik
-}
-
-Bias va Variance tushunchalarining farqi nimada?{
-=Bias modelni train to’plam bilan testlagandagi xatolik, Variance esa test to’plam bilan testlagandagi xatolik
-~Bias modelni test to’plam bilan testlagandagi xatolik, Variance esa train to’plam bilan testlagandagi xatolik
-~Bias modelni train +test to’plam bilan testlagandagi umumiy xatolik, Variance esa faqat test to’plam bilan testlagandagi xatolik
-~Bias modelni train +test to’plam bilan testlagandagi umumiy xatolik, Variance esa faqat train to’plam bilan testlagandagi xatolik
-}
-
-Agar bias yuqori bo’lsa qaysi turdagi muammo sodir bo’lmoqda?{
-=Underfitting
-~Owerfitting
-~Bias ni yuqoriligi mumamo hisoblanmaydi
-~Model juda murakkab
-}
-
-Agar Variance yuqori bo’lsa qanday turdagi muammo sodir bo’lmoqda?{
-=Owerfitting
-~Underfitting
-~Variance ni yuqoriligi mumamo hisoblanmaydi
-~Model juda sodda
-}
-
-Agar biass quyi va variance yuqori bo’lsa qanday turdagi muammo sodir bo’lmoqda?{
-=Owerfitting
-~Underfitting
-~Bias ni quyi variance ni yuqoriligi mumamo hisoblanmaydi
-~Model juda sodda
-}
-
-Model murakkab bo’lsa bias qanday bo’ladi?{
-=Quyi, model o’rgatuvchi tanlamaga mostlashib qoladi va train to’plamda xatoligi past bo’ladi
-~To’g’ri javob yo’q
-~Bias ning quyi yoki yuqori bo’lishi model murakkabligiga bog’liq emas.
-~Yuqori, model o’rgatuvchi tanlamaga mostlashib qoladi va train to’plamda xatoligi yuqori bo’ladi
-}
-
-Model murakkab bo’lsa variance qanday bo’ladi?{
-=Yuqori, model o’rgatuvchi tanlamaga mostlashib qoladi va test to’plamda xatoligi yuqori bo’ladi
-~Quyi, model o’rgatuvchi tanlamaga mostlashib qoladi va test to’plamda xatoligi past bo’ladi
-~To’g’ri javob yo’q
-~Variance ning quyi yoki yuqori bo’lishi model murakkabligiga bog’liq emas.
-}
-
-Underfitting bu - …{
-=Model juda soda. Shuning evaziga model train to’plamda ham, test to’plamda katta xatolik bo’lishiga olib keladi
-~Model juda muakkab. Shuning evaziga model train to’plamda ham, test to’plamda katta xatolik bo’lishiga olib keladi
-~Model juda soda. Shuning evaziga model train to’plamda yuqori, test to’plamda past xatolik bo’lishiga olib keladi
-~Model juda muarkkab. Shuning evaziga model train to’plamda yuqori, test to’plamda past xatolik bo’lishiga olib keladi
-}
-
-Owerfitting bu - …{
-=Model juda muarkkab. Shuning evaziga model train to’plamda past, test to’plamda yuqori xatolik bo’lishiga olib keladi
-~Model juda soda. Shuning evaziga model train to’plamda ham, test to’plamda katta xatolik bo’lishiga olib keladi
-~Model juda muakkab. Shuning evaziga model train to’plamda ham, test to’plamda katta xatolik bo’lishiga olib keladi
-~Model juda soda. Shuning evaziga model train to’plamda yuqori, test to’plamda past xatolik bo’lishiga olib keladi
-}
-
-Model qurishda bo’ladigan Underfitting muammosi qanday hal qilsa bo’ladi?{
-=Modelni murakkabligini oshirib ko’rish kerak
-~Modelni murakkabligini pasaytirib  ko’rish kerak
-~Bu muammoni hal qilishning imkoni yoq
-~Datasetni hajmini kamaytirib ko’rish kerak
-}
-
-Model qurishda bo’ladigan Owerfitting muammosi qanday hal qilsa bo’ladi?{
-=Modelni murakkabligini pasaytirib  ko’rish kerak
-~Modelni murakkabligini oshirib ko’rish kerak
-~Bu muammoni hal qilishning imkoni yoq
-~Datasetni hajmini kamaytirib ko’rish kerak
-}
-
-O’rgatuvchi tanlama nima?{
-=bu o’qitish uchun kerakli bo’lgan ma'lumotlar to'plamidir
-~bu o’qitish uchun kerakli bo’lgan neyronlar to'plamidir
-~bu o’qitish uchun kerakli bo’lgan og’irliklar to'plamidir
-~bu o’qitish uchun kerakli bo’lgan neyron tarmoq qatlamlar to'plamidir
-}
-
-O’ratuvchi tanlamadagi train to’plam …{
-=modelni o’qitish uchun ishlatiladi
-~modelni testlash uchun ishlatiladi
-~Modelni o’qitish davomida model parametrlarini sozlash uchun ishlatiladi
-~Bu turdagi o’rgatuvchi tanlamadan foydalanilmaydi
-}
-
-O’ratuvchi tanlamadagi val (validation) to’plam bu?{
-=Modelni o’qitish davomida model parametrlarini sozlash uchun ishlatiladi
-~modelni o’qitish uchun ishlatiladi
-~modelni testlash uchun ishlatiladi
-~Bu turdagi o’rgatuvchi tanlamadan foydalanilmaydi
-}
-
-O’ratuvchi tanlamadagi test to’plam bu?{
-=modelni testlash uchun ishlatiladi
-~modelni o’qitish uchun ishlatiladi
-~Modelni o’qitish davomida model parametrlarini sozlash uchun ishlatiladi
-~Bu turdagi o’rgatuvchi tanlamadan foydalanilmaydi
-}
-
-Model qurish uchun o’rgatuvchi tanalaga qaysi nisbatda bo’linsa maqsadga muoffiq bo’ladi?{
-=Train - 75%		Val - 15 %		Test - 10%
-~Train - 50%		Test - 50%
-~Train - 50%		Val - 25 % Test - 25%
-~Train - 75%		Val - 25 %
-}
-
-O’rgatuvchi tanlamada normallashtirish tushunchasi bu?{
-=O’ratuvchi tanlamdagi qiymatlarni bir xil shkalaga o’tkazish
-~O’ratuvchi tanlamdagi qiymatlarni turli xil shkalaga o’tkazish
-~O’ratuvchi tanlamdagi qiymatlarni faqat [0,1] shkalaga o’tkazish
-~O’ratuvchi tanlamdagi qiymatlarni faqat [-1,1] shkalaga o’tkazish
-}
-
-Logistik regressiya masalasida asosan qaysi aktivlashtirish funksiyasidan foydalaniladi?{
-=Sigmoid
-~Tanh
-~ReLU
-~Sigmoid va ReLU
-}
-
-Nima uchun o’rgatuvchi tanlama normallashtiriladi?{
-=Obyektni xarakterlovchi xususiyatlari bir xil shkalaga olib kelish orqali ularning ta’sir kuchini barobarlashtirish
-~Obyektni xarakterlovchi xususiyatlari faqat [0,1] shkalaga olib kelish orqali ularning ta’sir kuchini barobarlashtirish
-~Obyektni xarakterlovchi xususiyatlari faqat [-1,1] shkalaga olib kelish orqali ularning ta’sir kuchini barobarlashtirish
-~Obyektni xarakterlovchi xususiyatlari turli xil shkalaga olib kelish orqali ularning ta’sir kuchini barobarlashtirish
-}
-
-Validation dataset qayerda ishlatiladi?{
-=Modelni qurish davomida paramertlarni sozlashda
-~Model qurib bo’linganidan so’ng aniqlikni baholashda
-~To’g’ri javob yo’q
-~Validation datasetdan foydalanilmaydi
-}
-
-Klasterlash bu ?{
-=O’qituvchisiz o’qitish algoritmi asosida obyektlarni xarakterlovchi o’xshash xususiyatlari asosida guruhlash
-~O’qituvchili o’qitish algoritmi asosida obyektlarni xarakterlovchi o’xshash xususiyatlari asosida guruhlash
-~Mashinali o’qitishda buday tushuncha yo’q.
-~Logistik regressiya asosida amalga oshiriladigan mashinali o’qitish algoritmi
-}
-
-O’qituvchisiz o’qitish algoritmiga qaysi algoritim kiradi?{
-=Kmaens		Singular Value Decomposition
-~KNN		SVM
-~SVM		Kmaens
-~Random Forest
-}
-
-KNN algoritmida k qiymat nimani xaratterlaydi?{
-=k ta eng yaqin qo’shnini
-~k ta eng uzoq qo’shnini
-~O’qitish qadami
-~O’qitishlar sonini
-}
-
-Uy narxini bashorat qilish uchun mashinali o’qitishning qaysi algoritmidan foydalanadi{
-=Chiziqli regressiya
-~Logistik regressiya
-~Kmeans
-~SVM
-}
-
-Uyning xarakterlovchi xususiyatlari asosida ikkita guruhga(klasterga) (biznes, ekanom) ajratish uchun qaysi mashinali o’qitish algoritmidan foydalaniladi{
-=Kmeans
-~SVM
-~Random Forest
-~Logistik regressiya
-}
-
-KNN algoritmida k ni kichik tanlasak nima sodir bo’ladi?{
-=Shovqinga sezgir bo’ladi va sinflashtirishda xatolikka ko’p uchrashi mumkin
-~Shovqinga sezgir bo’lmaydi va sinflashtirishda xatolikka ko’p uchrashi mumkin
-~KNN algoritmida k parametr yo’q.
-~k ni kichik yoki katta tanlash algoritm ishiga ta’sir qilmaydi
-}
-
-KNN algoritmida k ni katta tanlasak nima sodir bo’ladi?{
-=Model qurish vaqti oshib ketadi. Bazan k ning katta tanlanishi sinflashtirishda xatolikka ko’p uchrashi mumkin
-~Shovqinga sezgir bo’ladi va sinflashtirishda xatolikka ko’p uchrashi mumkin
-~KNN algoritmida k parametr yo’q.
-~k ni kichik yoki katta tanlash algoritm ishiga ta’sir qilmaydi
-}
-
-KNN da k qiymatni tanlashda qaysi qoidaga rioya qilish kerak{
-=k<sqrt(n)		n – tanlamalar soni
-~k>sqrt(n)		n – tanlamalar soni
-~k<sqrt(n*2)		n – tanlamalar soni
-~k<sqrt(n^2)		n – tanlamalar soni
-}
-
-KNN algoritmida k ta eng yaqin qo’shni qanday aniqlanadi?{
-=To’plamdagi barcha elemetlar orasidagi masofa hisoblanib chiqiladi va eng yaqin k tasi tanlanadi
-~Taxminiy random() funksiyasi orqali aniqlanadi
-~To’plamdagi k ta elemetlar orasidagi masofa hisoblanib chiqiladi va ular o’sish tartibida saralanadi.
-~KNN algoritmida k ta eng yaqin qo’shni tushunchasi yo’q.
-}
-
-SVM algorimi qaysi masalani yechish uchun xizmat qiladi?{
-=Sinflashtirsh
-~Chiziqli regressiya
-~Klasterlash
-~Normallashtirish
-}
-
-KNN algoritmi qaysi masalani yechish uchun xizmat qiladi{
-=Barcha javob to’g’ri
-~Sinflashtirish
-~Regressiya
-~Klasterlash
-}
-
-KMeans bu -{
-=O’qituvchisiz o’qitish algoritmi
-~O’qituvchili o’qitish algoritmi
-~O’zini o’zi o’qitadigan algoritmi
-~to’g’ri javob yo’q
-}
-
-Kmaens algoritmi qaysi masalani yechish uchun xizmat qiladi{
-=Klasterlash
-~Barcha javob to’g’ri
-~Sinflashtirish
-~Regressiya
-}
-
-Logistik regressiyada qaror qabul qilishimiz uchun modeldan olingan qiymat qaysi bo’sag’a qiymati orqali solishtiriladi?{
-=0.5
-~0
-~1
-~-1 va 1
-}
-
-Nima uchun logistik regressiyada sigmoid funksiyadan foydalaniladi?{
-=qiymatlarni (0,1) oraliqda keltirish
-~qiymatlarni [-1,1] oraliqda keltirish
-~qiymatlarni [0,1] oraliqda keltirish
-~qiymatlarni (-1,1) oraliqda keltirish
-}
-
-Logistik regressiyada qaror chegrasi uchun topilgan modeldan  olingan qiymat qaysi bo’sag’a qiymati orqali solishtiriladi va qaror qabul qilinadi?{
-=0
-~1
-~0.5
-~-1 va 1
-}
-
-SVM algoritmida suppor vectors bu?{
-=Sinflashtirishnig chegara sohasi bo’lib, eng yaqin tanlanmalar uni xarakterlaydi
-~Sinflashtirishnig chegara sohasi bo’lib, eng uzoq tanlanmalar uni xarakterlaydi
-~Sinflashtirishnig chegara sohasi bo’lib, eng yaqin tanlanmalar uni xarakterlamaydi
-~Sinflashtirishnig chegara sohasi bo’lib, eng uzoq tanlanmalar uni xarakterlamaydi
-}
-
-SVM algoritmidagi hisoblaanadigan orqaliq (margin) qanday bo’lsa model ishonchli deb topiladi?{
-=Oraliq eng kattta bo’lsa
-~Oraliq eng kichik bo’lsa
-~Oraliq hech narsani anglatmaydi
-~To’gri javob yo’q
-}
-
-SVM algoritmida yadro(kernel) funksiyalari nima uchun xizmat qiladi?{
-=Kiruvchi xususiyatlarni ma’lum o’lchov sohasidan boshqasiga o’zgartirish uchun xizmat qiladi. Misol uchun 1D -> 2D
-~Kiruvchi xususiyatlarni 1D o’lchov sohasidan 2D o’lchov sohasiga o’tkazish uchun xizmat qiladi
-~Kiruvchi xususiyatlarni 2D o’lchov sohasidan 1D o’lchov sohasiga o’tkazish uchun xizmat qiladi
-~Kiruvchi xususiyatlarni 2D o’lchov sohasidan 3D o’lchov sohasiga o’tkazish uchun xizmat qiladi
-}
-
-SVM orqali ..{
-=Faqat bir nechta  sinfga tegishli bo’lgan obyektlar sinflanadi
-~Faqat ikkita sinfga tegishli bo’lgan obyektlar sinflanadi
-~Faqat regressiya masalasini yechish mumkin
-~Ham sinflashrish, ham regressiya masalasini ishlash mumkin.
-}
-
-Qidiruv tizimlarida sun’iy intellektdan foydalanish mumkinmi{
-=ha, mumkin va hozirda keng qo‘llanilmoqda (misol uchun Google, Yandex qidiruv tizimlari)
-~qisman amaliy natijalari bor lekin yetarlicha nazariy jihatdan formallashtirilmagan
-~nazariy jihatdan mumkin, lekin hozircha amaliy jihatdan natijalarga erishilmagan
-~qidiruv tizimlarida sun’iy intellektdan foydalanish qidiruv vaqtini oshiradi
-}
-
-Mashinani o’qitish jarayonida ma’lumotlarga qanday dastlabki ishlov beriladi?{
-=Ma’lumotlar formatlari bir xillashtiriladi
-~Ma’lumotlarni tozalash
-~Ma’lumotlardan xususiyatlarni ajratish
-~Barchasi to’g’ri
-}
-
-Sun’iy neyron tarmoqlarida perceptron tushunchasi?{
-=bu ikkita qatlamdan iborat ya’ni kiruvchi va chiquvchi qatlamdan iborat bo’lgan neyronni hisoblash tugunidir.
-~bu ikkita qatlamdan iborat ya’ni kiruvchi va faollashtish qatlamdan iborat bo’lgan neyronni hisoblash tugunidir.
-~bu bir qatlamdan iborat bo’lgan neyronni hisoblash tugunidir.
-~bu uch qatlamdan iborat bo’lgan neyronni hisoblash tugunidir.
-}
-
-Sun’iy neyron tarmoqlarida yashirin qatlam  tushunchasi?{
-=Kiruvchi va chiquvchi qatlamlar orasida joylashadigan neyron
-~Ko’rinmaydigan qatlam
-~Neyron tarmoqda yashirin qatlam tushunchasi yo’q
-~Kiruvchi qatlamdan kiyin keladigan barcha qatlamalar
-}
-
-Sun’iy neyron tarmoqlarida aktivlashtirish funksiyasi  tushunchasi?{
-=Neyron tugunlaridan chiqqan qiymatni ma’lum bir diapozonga tushirish uchun ishlatiladi
-~Neyron tarmoqda aktivlashtirish funksiyasi tushunchasi yo’q
-~Bu faol bo’lmagan tugunlarni faollashtish uchun ishlatiladi.
-~To’g’ri javob yoq
-}
-
-Chuqur o’qitilish deyiladi, qachonki …{
-=Nayron tarmog’imizda yashirin qatlamlar soni bittadan ko’p bo’lsa.
-~Nayron tarmog’imizda yashirin qatlamlar soni bitta bo’lsa.
-~Ikkita neyron orasidagi masofa katta bo’lsa
-~Neyronlar soni ikkitadan ko’p bo’lsa
-}
-
-Modelni o’qitish uchun o’quv tanlanma (dataset) qanday turlarga bo’lindi{
-=training, validation, testing
-~testing, value-x, training
-~validation, labels, training
-~labels, validation, testing
-}
-
-O’qitish uchun ma’lumotlar orasidan ortiqcha yoki ahamiyati past bo’lgan, model turg’unligiga ta’sir qiluvchi ma’lumotlarni olib tashlash jarayoni nima deb ataladi{
-=Ma’lumotlarni tozalash (Data cleaning)
-~Xususiyatlarni aniqlash (Feature detection)
-~Ma’lumotlarni o’chirish (Data deletion)
-~Ma’lumotlar turini aniqlash (Data formatting)
-}
-
-Neyron tarmoqlarida sinflashtirish masalasini yechishda chiquvchi qatlamda qaysi turdagi aktivlash funksiyasidan foydalaniladi{
-=Softmax
-~Sigmoid
-~ReLu
-~To’g’ri javob yo’q
-}
-
-Logistik regression model nima uchun ishlatiladi{
-=Sinflashtirsh masalasini yechish uchun
-~Klasterlash masalasini ishlash uchun
-~Neyron tarmoqni qurish uchun
-~Qiymatni bashoratlash uchun
-}
-
-Numpy kutubxonasidagi polyfit() funksiyasi nima uchun ishlatiladi?{
-=Chiziqli regressiya uchun model paramertlarini aniqlash uchun
-~Loginstik  regressiya uchun model paramertlarini aniqlash uchun
-~Chiziqli va logistik   regressiya uchun model paramertlarini aniqlash uchun
-~Polynom funksiya yaratish uchun
-}
-
-Numpy kutubxonasidagi poly1d() funksiyasi nima uchun ishlatiladi?{
-=Berilgan parametrlar asosida polinomal  funksiya hosil qilish
-~Berilgan parametrlar asosida polinomal  Class  hosil qilish
-~Berilgan parametrlar asosida logistik regressiya modelini qurish
-~Berilgan parametrlar asosida giperbolik  regressiya modelini qurish
-}
-
-Neyron tarmoqlarini qurishga mo’ljallangan python kutubxonalarini ko'rsating.{
-=Numpy, keras, tensorflow
-~Numpy, pandas, keras
-~Tensorflow, numpy, pandas
-~Python, Matlab, Octave
-}
-
-Neyron tarmoq asosida sinflashtirish masalasini yechish mumkinmi?{
-=Ha
-~Yoq, faqat regressiya masalasini yechadi.
-~Faqat ikkilik sinflashtirganda
-~Yoq, klasterlash masalasini yechadi.
-}
-
-Python muhitida chiziqli regression model qurish uchun ishlatiladigan stats.linregress(x,y) funksiyasi nechta qiymat qaytaradi{
-=5
-~4
-~3
-~2
-}
-
-Neyron tarmoqda tugunlar nimalar bilan bog’lanadi{
-=og’irlik koeffitsentlari
-~o’zgarmas koeffitsentlar
-~tasodifiy koeffitsentlar
-~ozod had koeffitsentlari
-}
-
-Qanday turdagi faollashtirish funksiyadan neyron tarmoqda foydalaniladi{
-=Barchasi to’g’ri
-~ReLU
-~softmax
-~Sigmoid
-}
-
-Neyron tarmoqdagi tugun qiymati 5 ga teng. Ushbu tugun ReLU funksiyasi yordamida faollashtirilsa qanday qiymatga o‟zgaradi{
-=5
-~4
-~0
-~01.май
-}
-
-Neyron tarmoqdagi tugun qiymati -5 ga teng. Ushbu tugun ReLU funksiyasi yordamida faollashtirilsa qanday qiymatga o‟zgaradi{
-=0
-~01.май
-~5
-~-5
-}
-
-Neyron tarmoqdagi tugun qiymati 0 ga teng. Ushbu tugun sigmoid funksiyasi yordamida faollashtirilsa qanday qiymatga o’zgaradi{
-=0.5
-~0
-~1
-~2.785661
-}
-
-Hozirgi kunda butun dunyoda rivojlanib borayotgan mashinali o’qitish (machine learning), chuqur o’qitish (deep learning) kabi usullar sun’iy intellekt bilan qanday bog’liq{
-=hozirda tasvirlardan ob’ektlarni tanib olish,  video nazorat, ovozni tanib olish kabi sohalarda keng foydalaniladi va sun’iy intellekt tizimini yaratishda katta ahamiyat kasb etadi
-~faqat ovozni tanib olishda ishlatiladi va sun’iy intellekt tizimini yaratishda deyarli fodalanilmaydi
-~tasvirlarni tanib olishda ishlatiladi va sun’iy intellekt tizimini yaratishda foydalaniladi
-~faqatgina ma’lumotlarning intellektual tahliliga oid
-}
-
-Mashinani o’qitish jarayonida ma’lumotlarga qanday dastlabki ishlov beriladi?{
-=Format, Data Cleaning, Feature Extraction
-~Data Cleaning, Resizing, , Feature Extraction
-~Resizing, Feature Extraction, Format
-~Format, Resizing, Data Cleaning
-}
-
-Regression tahlilni qanday usullar asosida amalga oshiriladi.{
-=chiziqli, nochiziqli va logistik regressiya usullari asosida
-~sintaktik usullar asosida
-~dinamik usillar asosida
-~semantik usullari asosida
-}
-
-Muammoni aniqlash, ma’lumotlarni tayyorlash, algoritmni ishlab chiqish va baholash, natijaviy ma’lumotlar aniqligini oshirish va yakuniy natijani taqdim qilish – bular qanday jarayonning bosqichlari hisoblanadi{
-=Mashinali o’qitish
-~Chuqur o’qitish
-~Regression tahlil
-~Statistik tahlil
-}
-
-Keras bu – ...{
-=tensorflow asosiga qurilgan ochiq kodli neyron tarmoq uchun mo’ljallangan kutubxona
-~numpy asosiga qurilgan ochiq kodli neyron tarmoq uchun mo’ljallangan kutubxona
-~ochiq kodli neyron tarmoq uchun mo’ljallangan dasturiy vosita
-~matplotlib asosiga qurilgan ochiq kodli neyron tarmoq uchun mo’ljallangan kutubxona
-}
-
-Tensorflow bu – ...{
-=Python kutubxonasi bo’lib, neyron tarmoqlarini hosil qilishga mo’ljallangan.
-~Matlab kutubxonasi bo’lib, neyron tarmoqlarini hosil qilishga mo’ljallangan.
-~Ocatev kutubxonasi bo’lib, neyron tarmoqlarini hosil qilishga mo’ljallangan.
-~Python kutubxonasi bo’lib, neyron tarmoqlarini hosil qilishga mo’ljallanmagan.
-}
-
-Sklearn bu - …{
-=Python dasturlash tilidagi maxsus kutubxona bo’lib, mashinali o’qitish algoritmlarini amalga oshirishga mo’ljallangan maxsus paket
-~Matlabning maxsus paketi bo’lib, mashinali o’qitish algoritmlarini amalga oshirishga mo’ljallangan hisoblanadi
-~Python dasturlash tilidagi maxsus kutubxona bo’lib, o’zini o’zi o’qitadigan mashinali o’qitish algortimlarini ishlab chiqishga mo’ljallangan
-~Python dasturlash tilidagi maxsus kutubxona bo’lib, mashinali o’qitishning o’qituvchili algoritmlarini amalga oshirishga mo’ljallangan maxsus paket
-}
-
-Chuqur o’qitish qanday tarmoqlari asosida amalga oshiriladi?{
-=neyron tarmoqlar asosida
-~lokal tarmoqlar asosida
-~global tarmoqlar asosida
-~internet tarmoqlar asosida
-}
-
-Chuqur o’qitish bosqichlari to’g’ri tartiblangan javobni belgilang{
-=1. Muammoni tushunib olish.		2. Ma’lumotlarni aniqlash.		3. Chuqur o’qitish algoritmini belgilash.		4. Modelni o’qitish.		5. Modelni testlash.
-~1. Ma’lumotlarni aniqlash.		2. Muammoni tushunib olish.		3. Chuqur o’qitish algoritmini belgilash.		4. Modelni o’qitish.		5. Modelni testlash.
-~1. Muammoni tushunib olish.		2. Ma’lumotlarni aniqlash.		3. Chuqur o’qitish algoritmini belgilash.		4. Modelni o’qitish.
-~1. Chuqur o’qitish algoritmini belgilash.		2. Modelni o’qitish.		3. Modelni testlash.
-}
-
-Chuqur o’qitish necha asosiy bosqichlardan tashkil topgan?{
-=5
-~4
-~3
-~6
-}
-
-Chuqur o’qitishning birinchi bosqichi qanday jarayondan iborat?{
-=Muammoni tushunib olish.
-~Ma’lumotlarni aniqlash.
-~Chuqur o’qitish algoritmini belgilash.
-~Modelni o’qitish.
-}
-
-Chuqur o’qitishning ikkinchi bosqichi qanday jarayondan iborat?{
-=Ma’lumotlarni aniqlash.
-~Chuqur o’qitish algoritmini belgilash.
-~Modelni o’qitish.
-~Modelni testlash.
-}
-
-Chuqur o’qitishning uchunchi bosqichi qanday jarayondan iborat?{
-=Chuqur o’qitish algoritmini belgilash.
-~Modelni testlash.
-~Muammoni tushunib olish.
-~Modelni o’qitish.
-}
-
-Chuqur o’qitishning turtinchi bosqichi qanday jarayondan iborat?{
-=Modelni o’qitish.
-~Modelni testlash.
-~Chuqur o’qitish algoritmini belgilash.
-~Muammoni tushunib olish.
-}
-
-Chuqur o’qitishning oxirgi bosqichi qanday jarayondan iborat?{
-=Modelni testlash.
-~Chuqur o’qitish algoritmini belgilash.
-~Modelni o’qitish.
-~Ma’lumotlarni aniqlash.
-}
-
-MNIST dataset da nechta sinfga tegishli obyektlarni ma’lumotlari bor{
-=10
-~9
-~100
-~3
-}
-
-CIFAR10 dataset da nechta sinfga tegishli obyektlarini ma’lumotlari bor{
-=10
-~9
-~100
-~3
-}
-
-CIFAR10 datasetda tasvirlarning o’lchami qaysi o’lchamda{
-=To’g’ri javob yo’q
-~28x28
-~128x128
-~64x64
-}
-
-CIFAR10 datasetda necha tanlama bor{
-=60000
-~70000
-~50000
-~10000
-}
-
-CIFAR100 dataset da nechta sinfga tegishli obyektlarni ma’lumotlari bor{
-=100
-~99
-~10
-~2
-}
-
-IRIS dataset da nechta sinfga tegishli obyektlarni ma’lumotlari bor{
-=3
-~2
-~10
-~2
-}
-
-IRIS dataset da obyektni xarakterlovchi  xususiyatlari nechta{
-=4
-~2
-~3
-~8
-}
-
-Chiziqli va logistik regression model qurilayotganda bitta o’rgatuvchi tanlamadan foydalansa bo’ladimi?{
-=Ha, faqat yorliqlari uchun ikkita qiymat saqlangan bo’lsa
-~Ha, regression model uchun hamma vaqt dataset bir xilda bo’ladi.
-~Buning imkoni yo’q
-~To’g’ri javob yo’q
-}
-
-Chiziqli regresiya va Logistik regresiya uchun Cost funksiyasi bir xilda bo’ladimi?{
-=Yoq
-~Ha
-~Logistik regressiyada cost funksiyasi bo’lmaydi
-~Chiziqli regressiyada cost funksiyasi bo’lmaydi
-}
-
-Python ning scipy kutubxonasidan qaysi  Classs chiziqli regressiya modelini qurishda ishlatiladi{
-=stats
-~sklearn
-~numpy
-~ployfit
-}
-
-Python sklearn kutubxonasidagi qaysi Classs chiziqli regressiya modelini qurishda ishlatiladi{
-=LinearRegression
-~Polyfit
-~poly1d
-~Linear_model
-}
-
-Chiziqli regressiyada modelni murakkab tanlansa qaysi turdagi muammo yuzaga keladi{
-=Owerfitting
-~Underfitting
-~Model aniq ishlaydigan bo’lib, shakllanadi.
-~Muammo sodir bo’lmaydi
-}
-
-Chiziqli regressiyada modelni sodda tanlansa qaysi turdagi muammo yuzaga keladi{
-=Underfitting
-~Owerfitting
-~Model ishonchli, hech qanaday muammo yo’q
-~Muammo sodir bo’lmaydi
-}
-
-Chiziqli regression modelni qurib bo’lganimizdan so’ng modelni train dataset bilan testlanganda 65% aniqliq va test dataset bilan testlaganimizda 55% aniqlik bersa, qaysi turdagi mauammo sodir bo’lmoqda{
-=Underfitting
-~Owerfitting
-~Model ishonchli, hech qanaday muammo yo’q
-~Everfitting
-}
-
-Chiziqli regression modelni qurib bo’lganimizdan so’ng modelni train dataset bilan testlanganda 25% aniqliq va test dataset bilan testlaganimizda 95% aniqlik bersa, qaysi turdagi mauammo sodir bo’lmoqda{
-=Underfitting
-~Owerfitting
-~Model ishonchli, hech qanaday muammo yo’q
-~Everfitting
-}
-
-Chiziqli regression modelni qurib bo’lganimizdan so’ng modelni train dataset bilan testlanganda 95% aniqliq va test dataset bilan testlaganimizda 55% aniqlik bersa, qaysi turdagi mauammo sodir bo’lmoqda{
-=Owerfitting
-~Model ishonchli, hech qanaday muammo yo’q
-~Underfitting
-~Everfitting
-}
-
-Chiziqli regression modelni qurib bo’lganimizdan so’ng modelni train dataset bilan testlanganda 95% aniqliq va test dataset bilan testlaganimizda 92% aniqlik bersa, qaysi turdagi mauammo sodir bo’lmoqda.{
-=Model ishonchli, hech qanaday muammo yo’q
-~Underfitting
-~Owerfitting
-~Everfitting
-}
-
-Python ning qaysi kutubxona oraqli vector va matritsalar ustida amalar bajarish mumkin{
-=Numpy
-~Math
-~Pandas
-~VecMat
-}
-
-Ochiq datasetlarni qidirishga mo’ljallangan tizim qaysi?{
-=Barchasi to’g’ri
-~UCI Machine Learning Repository
-~VisualData
-~Google Dataset Search
-}
-
-Pandas kutubxonasida head() funksiyasi nima vazifa bajaradi?{
-=To’plamning dastlabgi bir nechta(5ta) satrini olib beradi.
-~To’plamning ustunlar nomini olib beradi.
-~To’plamning ustunlar nomisiz  bir nechta  satrini olib beradi.
-~To’g’ri javob yo’q
-}
-
-Pythonda funksiya e’lon qilish uchun qaysi kalit so’zidan foydalaniladi?{
-=def
-~function
-~void
-~define
-}
-
-Neyron tarmoqlarida dastlab vazn koeffitsentlari qanday bo’ladi?{
-=random() funksiyasi orqali taxminiy beriladi.
-~musbat qiymatlar bilan to’ldiriladi.
-~To’ldirish shart emas.
-~manfiy qiymatlar bilan to’ldiriladi.
-}
-
-Neyron tarmoqlarida topilgan vazn koeffitsentlari qanday bo’ladi?{
-=Musbat va manfiy bo’lishi mumkin
-~Faqat musbat bo’ladi
-~Faqat manfiy bo’ladi
-~Qiymatlar [0,1] oraliqda bo’ladi.
-}
-
-KNN algoritmida qo’llaniladigan ikki nuqta orasidagi masofa … deb yuritiladi.		Nutqlar o’rniga mos variantni qo’ying.{
-=Euclidean masofasi
-~Chebyshev masofasi
-~Manhattan masofasi
-~Minkowski masofasi
-}
-
-KMaens algoritmida qo’llaniladigan ikki nuqta orasidagi masofa … deb yuritiladi.		Nutqlar o’rniga mos variantni qo’ying.{
-=Euclidean masofasi
-~Chebyshev masofasi
-~Manhattan masofasi
-~Minkowski masofasi
-}
-
-Gradient tushish algoritmidagi ‘learning rate’ parameter nimani xarakterlaydi?{
-=O’qish qadamini
-~O’qishitda takrorlanishlar sonini
-~To’g’ri javob yo’q
-~Model aniqligini
-}
-
-UCI Machine Learning Repository nima ?{
-=Mashinili o’qitishning ochiq manbali datasetlarini qidirishga mo’ljallangan tizim
-~GitHub  Repository
-~Gitlab  Repository
-~Kaggle  Repository
-}
-
-Google Dataset Search qancha ma’lumotni qamrab oladi?{
-=25 mln
-~250mln
-~15mln
-~6mln
-}
-
-Python array bu -{
-=bir tipdagi (bir xil ma’lumotlar toifasiga tegishli) elementlar to’plamidan
-~turli tipdagi elementlar to’plamidan iborat dinamik massiv
-~turli tipdagi elementlar to’plamidan iborat statik massiv
-~To’g’ri javob yo’q
-}
-
-Python list bu -{
-=turli tipdagi elementlar to’plamidan iborat dinamik massiv
-~bir tipdagi (bir xil ma’lumotlar toifasiga tegishli) elementlar to’plamidan iborat dinamik massiv
-~turli tipdagi elementlar to’plamidan iborat statik massiv
-~To’g’ri javob yo’q
-}
-
-Python tuple bu -{
-=turli tipdagi elementlar to’plamidan iborat statik massiv
-~bir tipdagi (bir xil ma’lumotlar toifasiga tegishli) elementlar to’plamidan iborat dinamik massiv
-~turli tipdagi elementlar to’plamidan iborat statik massiv
-~To’g’ri javob yo’q
-}
-
-Mashinali o’qitishda samaradorlikni baholash uchun qanday matritsadan foydalaniladi?{
-=Tartibsizlik matritsasi (confusion matrix)
-~Aniqliq matritsasi		(accuracy matrix)
-~Xatolik matritsasi		(loss matrix)
-~Barchasi to’g’ri
-}
-
-pip freeze{
-=Environment o’rnatilgan barcha paketlar ro’yxatini chop qiladi
-~Environment  o’rnatilgan eng oxirgi paketlar ro’yxatini chop qiladi
-~Environment  o’rnatilgan eng oxirgi 10 ta paket ro’yxatini chop qiladi
-~Environment o’rnatilgan mashinali o’qitishga xizmat qiladigan paketlar ro’yxatini chop qilish
-}
-
-pip install numpy as np{
-=Xatolik sodir bo’ladi
-~Numpy kutubxonasi o’rnatiladi
-~Numpy kutubxonasi yuklash va quyida uni np deb yuritish mumkin
-~To’g’ri javob yo’q
-}
-
-import numpy as nb{
-=Numpy kutubxonasi yuklash va quyida uni nb deb yuritish mumkin
-~Xatolik sodir bo’ladi
-~Numpy kutubxonasi o’rnatiladi
-~Numpy kutubxonasi yuklash va quyida uni np deb yuritish mumkin
-}
-
->>import numpy as np  		>>arr =np.array([1, 2, 3, 4, 5, 6])		>>newarr = arr.reshape(2, 3)		>>print(newarr){
-=[[1,2,3],[4,5,6]]
-~[[1,2],[3,4],[5,6]]
-~[3,4]
-~[[[1,2,3],[4,5,6]]]
-}
-
-Agar mashinali o’qitish  qo’llaniladigan  sklearn kutubxonasi o’rnatilmagan bo’lsa uni qanday o’rnatish mumkin.{
-=Barchasi to’g’ri
-~pip install  sklearn
-~conda install scikit-learn
-~pip install  scikit-learn
-}
-
-O’rgatuvchi tanlamasiz(dataset siz) mashinali o’qitish algoritmlarini ishlata olamizmi{
-=Imkoni yoq
-~Ha, albatta
-~Ba’zan
-~To’g’ri javob yo’q
-}
-
-Python muhitida neyron tarmoq qurish uchun qaysi paketlardan foydalaniladi?{
-=keras, tensorflow
-~tensorflow, pandas
-~numpy, matplotlib
-~pandas, opencv
-}
-
-Keras muhitida modelni testlash uchun mavjud funksiyalardan qaysi biri ishlatiladi?{
-=fit()
-~compile()
-~evaluate()
-~test()
-}
-
-O’qituvchili o’qitish (supervised learning) nima?{
-=modelni o’qitish uchun ma’lumotlar bilan birgalikda ularning belgisini (data+label) ham ishlatish
-~modelni o’qitish uchun ma’lumotlarni belgisisiz (data without label) ishlatish
-~modelni o’qitish uchun tasvir ma’lumotlaridan (image) foydalanish
-~modelni o’qitish uchun faqat ma’lumotlar belgisini (label) ishlatish
-}
-
-Keras muhitida qurilgan neyron tarmoqda joriy qatlam uchun faollashtirish funksiyasini qo’shishda quyidagilarning qaysi biridan foydalaniladi?{
-=model.add(Activation(‘relu’))
-~model.insert(Activation(‘relu’))
-~model.function(Activate(‘relu’))
-~model.add(ActiveFunction(‘relu’))
-}
-
-O’qituvchisiz (unsupervised) o’qitish algortimlari to’g’ri ko’rsatilgan javobni ko’rsating?{
-=k-means clustering, hierarchical clustering, independent component analysis
-~linear regression, nearest neighbor, random forest, decision tree
-~k-means clustering, deep learning, logistic regression, random forest
-~k-nn, decision tree, linear regression, k-means clustering
-}
-
-O’qituvchisiz o’qitish (unsupervised learning) nima?{
-=modelni o’qitish uchun ma’lumotlarni belgisisiz (data without label) ishlatish
-~modelni o’qitish uchun faqat ma’lumotlar belgisini (label) ishlatish
-~modelni o’qitish uchun ma’lumotlar bilan birgalikda ularning belgisini (data+label) ham ishlatish
-~modelni o’qitish uchun tasvir ma’lumotlari va ularning belgilaridan (image+label) foydalanish
-}
-
-Sigmoid funksiyasini hisoblash formulasini ko’rsating?{
-=sig(x)=1/(1+exp(-x))
-~sig(x)=1/(1-exp(x))
-~sig(x)=1/exp(-x)
-~sig(x)=1/exp(x)
-}
-
-Mashinali o’qitish nima?{
-=kompyuter dasturining ma’lumotlarni o’qib olish asosida xususiyatlarni o’rganish qobiliyatidir
-~faqat kompyuter o’yinlarini yaratish uchun dastur xususiyatlarni o’rganish qobiliyatidir
-~bu robotni o’rgatishning an’anaviy usuli
-~kompyuter dasturlarini lug’at yordamida o’qitish usuli
-}
-
-Pythonda massivni e’lon qilish uchun qanday toifalardan foydalaniladi?{
-=array, matrix
-~tuple, arr
-~list, tuple
-~arr, list
-}
-
-…… bu ikkita qatlamdan iborat ya’ni kiruvchi va chiquvchi qatlamdan iborat bo’lgan neyronni hisoblash tugunidir. Nuqtalar o’rniga quyidagilardan mos keldiganini qo’ying?{
-=perceptron
-~sigmoid funksiyasi
-~neyron
-~ReLU funksiyasi
-}
-
-Regressiya nima?{
-=ma’lumotlarni intellektual tahlil qilish usullaridan biri
-~ma’lumotlarni ustida arifmetik usullaridan biri
-~ma’lumotlarni raqamli ishlov berish usullaridan biri
-~ma’lumotlarni jamlash usullaridan biri
-}
-
-Python muhitida for sikl operatorida ishlatiladigan for i in range(0,10,2) ifodasida i indeks o’zgaruvchisiga qanday qiymatlar keladi?{
-=0 2 4 6 8
-~0 2 10
-~0 10
-~2 4 6 8 10
-}
-
-Supervised o’qitish algoritmlari asosan qanday masalani yechishga qaratilgan?{
-=regressiya va sinflashtirish masalasiga
-~statistik usullar yordamida ma’lumotlarni ajratish masalasiga
-~statistik usullar yordamida ma’lumotlarni sinflashtirish masalasiga
-~sinflashtirish va segmentlash masalasiga
-}
-
-Neyron tarmoqda qanday turdagi qatlamlar (layers) bo’lishi mumkin?{
-=kiruvchi, chiquvchi, yashirin
-~kiruvchi, yashirin, oraliq
-~qabul qiluvchi, hisoblovchi, chiquvchi
-~kiruvchi, qabul qiluvchi, chiquvchi
-}
-
-Chiziqli regression model nima uchun ishlatiladi?{
-=bashorat qilish uchun
-~mantiqiy model qurish uchun
-~sinflashtirish masalasini yechish uchun
-~segmentlash masalasini yechish uchun
-}
-
-Neyron tarmoq nima?{
-=bu inson miyasining ishlash faoliyatini qisman aks ettiruvchi tuzilma
-~bu inson miyasining ishlash faoliyatini qisman aks ettiruvchi dataset
-~bu inson miyasining ishlash faoliyatini butunlay aks ettiruvchi dataset
-~bu inson miyasining ishlash faoliyatini butunlay aks ettiruvchi tuzilma
-}
-
-Sun’iy intellekt deganda nimani tushunasiz?{
-=insonning onggi kabi fikrlovchi dastur
-~oddiy kompyuter dasturi
-~qaror qabul qiluvchi ilovalar
-~bunday termin fanda mavjud emas
-}
-
-Sun'iy intellekt bu …?{
-=bu kompyuterda insonning aqlli xatti harakatlarini qanday amalga oshirishni o'rganadigan tadqiqot sohasi
-~bu kompyuterda insonning jismoniy xatti harakatlarini qanday amalga oshirishni o'rganadigan tadqiqot sohasi
-~bu kompyuterda insonning bialogik xatti harakatlarini qanday amalga oshirishni o'rganadigan tadqiqot sohasi
-~To’g’ri javob yo’q
-}
-
-Keras kutubxonasidagi Sequential() nima vazifani bajaradi?{
-=neyron tarmoq modelini qurish uchun dastlabki obyektni yaratadi
-~ketma-ket kamida 2 qatlamdan iborat neyron tarmoq quradi
-~neyron tarmoq modelini o’qitish uchun ishlatiladi
-~qurilgan neyron tarmoqni ketma-ket ko’rinishga keltiradi
-}
-
-Python muhitida for sikl operatorida ishlatiladigan for i in range(10) ifodasida i indeks o’zgaruvchisiga qanday qiymatlar keladi?{
-=0 1 2 3 4 5 6 7 8 9
-~0 1 2 3 4 5 6 7 8 9
-~0 9
-~1 2 3 4 5 6 7 8 9 10
-}
-
-Qanday turdagi faollashtirish funksiyalari mavud?{
-=ReLU, sigmoid, softmax
-~loss, sigmoid, ReLU
-~ReLU, cost, softmax
-~cost, loss, sigmoid
-}
-
-Chuqur o’qitish – bu?{
-=bu ko'p qatlamli neyron tarmoqlar asosida obyekt xususiyatlarini tushunishga qaratilgan jarayondir
-~bu bir qatlamli neyron tarmoqlar asosida obyekt xususiyatlarini tushunishga qaratilgan jarayondir
-~bu bu modelni qurib olish uchun amalga oshiriladigan o’qitish jarayonidir
-~bu modelni tezroq va aniqroq qurib olish uchun amalga oshiriladigan jarayon
-}
-
-Python muhitida turli xil matematik funksiya grafiklarini va tasvirlarni vizuallashtirish uchun ishlatiladigan paket qaysi?{
-=matplotlib
-~keras
-~pandas
-~numpy
-}
-
-Sun’iy neyron tarmoq tashkil etuvchilarini ko’rsating?{
-=node, input, weights, output
-~cell body, dendrites, synapse, axon
-~input, dendrites, synapse, output
-~synapse, axon, weights, node
-}
-
-Python muhitida scatter() funksiyasi qanday vazifani bajaradi?{
-=berilgan x,y to'plam bo’yicha 2 o’lchovli grafigini chizish uchun ishlatiladi
-~chiziqli regression model koeffitsentlarini (ko’pi bilan 3 ta) hisoblaydi
-~polinomial regression model koeffitsentlarini hisoblaydi
-~qurilgan model koeffitsentlari bo’yicha bashorat qilinadigan qiymatlarni hisoblaydi
-}
-
-pip install tensorflow buyrug’i asosida nima sodir bo’ladi?{
-=tensorflow kutubxonasi o’rnatiladi
-~keras va tensorflow kutubxonasi o’rnatiladi
-~tensorflow kutubxonasi chaqiriladi
-~keras va tensorflow kutubxonasi chaqiriladi
-}
-
-Biologik neyron tarmoq tashkil etuvchilarini ko’rsating?{
-=cell body, dendrites, synapse, axon
-~input, dendrites, synapse, output
-~node, input, weights, output
-~synapse, axon, weights, node
-}
-
-Dataset bu nima?{
-=bu o’qitish uchun kerakli bo’lgan ma'lumotlar to'plamidir
-~bu o’qitish uchun kerakli bo’lgan neyronlar to'plamidir
-~bu o’qitish uchun kerakli bo’lgan og’irliklar to'plamidir
-~bu o’qitish uchun kerakli bo’lgan neyron tarmoq qatlamlar to'plamidir
-}
-
-Keras kutubxonasida neyron tarmoq modelini qurish jarayonida quyidagi dastur kodi nima vazifani bajaradi?		model = Sequential()	model.add(Dense(16, input_shape=(64,))){
-=kirish qatlamida 64 ta va chiqish qatlamida 16 ta neyrondan iborat neyron tarmoq quradi
-~kirish qatlamida 16 ta va 1-yashirin qatlamda 64 ta neyrondan iborat neyron tarmoq quradi
-~1-yashirin qatlamida 64 ta va 2-yashirin qatlamda 16 ta neyrondan iborat neyron tarmoq quradi
-~kirish qatlamida 64 ta va 1-yashirin qatlamda 16 ta neyrondan iborat neyron tarmoq quradi
-}
-
-Convolutional neural networks (CNN) – bu?{
-=bu ko'p qatlamli neyron tarmoq asosida qurilgan chuqur o’qitishning maxsus arxitekturasi
-~bu bir qatlamli neyron tarmoq asosida qurilgan chuqur o’qitishning maxsus arxitekturasi
-~bu ko’p qatlamli neyron tarmoq asosida qurilgan chuqur o’qitishning maxsus usuli
-~bu bir qatlamli neyron tarmoq asosida qurilgan chuqur o’qitishning maxsus usuli
-}
-
-Sun’iy intellektga asoslangan dasturlarni ishlab chiqishdan maqsad nima?{
-=mustaqil fikrlovchi va qaror qabul qiluvchi dasturlarni hayotga tadbiq qilish
-~vaqtni maroqli o‘tkazish
-~insonlarning yashash darajasini yaxshilash
-~ortiqcha sarf-xarajatni kamaytirish
-}
-
-Neyron tarmoqdagi tugun qiymati -5 ga teng. Ushbu tugun ReLU funksiyasi yordamida faollashtirilsa qanday qiymatga o’zgaradi?{
-=0
-~5
-~-5
-~01.май
-}
-
-Mashinani o’qitish turlari to’g’ri ko’rsatilgan javobni tanlang?{
-=supervised, unsupervised, Semi-supervised, reinforcement
-~regressiya, Ehtimollar nazariyasi, Supervised, unsupervised
-~supervised, unsupervised, Regressiya, Sinflashtirish
-~regressiya, Sinflashtirish, Semi-supervised, reinforcement
-}
-
-Neyron tarmoqlari bu…?{
-=Neyron tarmoqlari juda ko’p muhim xususiyatlarga ega, ammo asosiysi bu o’rganish qobiliyatidir.
-~Neyron tarmoqlari ma’lumotlarni bog’lash uchun xizmat qiladi.
-~Bunday tarmoq mavjud emas
-~Ikkilik kod sifatidagi algoritm
-}
-
-Chiziqli regressiyaga to’g’ri ta’rifni toping?{
-=Chiziqli regressiya kuzatilgan ma'lumotlarga chiziqli tenglamani bog’lash orqali ikkita o'zgaruvchi o'rtasidagi munosabatni modellashtirishga aytiladi.
-~Chiziqli regressiya ma’lumotlarni klassifikatsiyalaydi.
-~Chiziqli Regressiya bu tanlangan ma’lumotlar ichidan kerakli ma’lumotni qidirish algoritmi.
-~To’g’ri javob yo’q.
-}
-
-Quyidagi usullardan qaysi biri har qanday chiziqli bo'linadigan ma'lumotlar to'plamida nol o'qitish(zero training) xatosiga erishishi mumkin?{
-=KNN
-~Qaror daraxti
-~SVM(support vector machine)
-~CNN
-}
-
-CNN bu…?{
-=Svyortkali neyron tarmoq
-~Adamar neyron tarmog’i
-~K ta yaqin qo’shnilar
-~Qayta murojaat neyron tarmog’i
-}
-
-KNN bu…?{
-=K ta yaqin qo’shnilar  agoritmi
-~Svyortkali neyron tarmoq
-~Adamar almashtririshli Neyron tarmoq
-~To’g’ri javob yo’q
-}
-
-Sun’iy intellektda mashinani o'qitish uchun to’g’ri ta’rif berilgan qatorni tanlang{
-=Sun’iy intellekt - bu inson ongiga taqlid qila oladigan dasturiy ta'minot va uni mashinali o’qitishda aqlli mashinalarga dasturlashning muqobil usulidir.
-~Mashinali o’qitish - bu aqlli mashinalarni dasturlashning muqobil usuli.
-~Mashinali o’qitish va suniy intellektning maqsadlari juda boshqacha.
-~To’g’ri javob yo’q
-}
-
-Mashinani o’qitish jarayoni bosqichlari ketma – ket to’g’ri berilgan qatorni toping{
-=◦ Muammoni aniqlash. 		◦ Ma’lumotlarni tayyorlash. 		◦ Algoritmni ishlab chiqish va baholash (testlash).		◦ Natijaviy ma’lumotlar aniqligini oshirish.		◦ Yakuniy natijani (ishlab chiqilgan model) taqdim qilish
-~◦ Natijaviy ma’lumotlar aniqligini oshirish.		◦ Yakuniy natijani (ishlab chiqilgan model) taqdim qilish
-~◦ Muammoni aniqlash. 		◦ Ma’lumotlarni tayyorlash. 		◦ Algoritmni ishlab chiqish va baholash (testlash).
-~Bunaqa Bosqichlar mavjud emas
-}
-
-Mashinali o’qitish turlari qaysi qatorda to’g’ri berilgan{
-=O’qtuvchili va O’qituvchisiz
-~Tanlanma
-~Ma’lumotlar bazasi
-~Chiziqli va logistik
-}
-
-O’qituvchili o’qitish (Supervised learning) – bu .. ?{
-=bu modelni xususiyatlari aniq bo’lgan ma’lumotlar bilan o’qitish .
-~Bu – modelning aniqligini aniqlash algoritmi
-~Ma’lumotlarga ishlov berish dasturi
-~Oddiy algoritm
-}
-
-O’qituvchili o’qitish algoritmlari qaysi?{
-=Chiziqli regressiya		SVM
-~CNN		RNN
-~Bunday algoritmlar mavjud emas
-~To’g’ri javob yo’q
-}
-
-O’qituvchisiz o’qitish (unsupervised learning) – bu … ?{
-=mashinani o’qitish usulidan biri bo’lib, bunda modelni oldindan aniq bo’lgan ma’lumotlar bilan o’qitish amalga oshirilmaydi, aksincha obyekt parametrlarini (ma'lumotlarni) topish uchun modelga o'z ustida ishlashga imkon yaratib beriladi
-~Ma’lumot qidirish algoritmlaridan tashkil topgan tizim
-~Bunday o’qitish mavjud emas
-~To’g’ri javob yo’q
-}
-
-Unsupervised learning usulida asosan qanday masala yechiladi?{
-=klasterlash
-~normallashtirish
-~sinflashtirish
-~Signallarga ishlov berish
-}
-
-O’qituvchisiz o’qitish algoritmlari qaysi?{
-=Hierarchical clustering va K-means clustering
-~SVM va CNN
-~RNN va GMM
-~To’g’ri javob yo’q
-}
-
-Ma’lumotlarni tozalashga to'liq ta'rif berilgan qatorini toping?{
-=Ushbu bosqichda ma’lumotlar orasidan ortiqcha yoki ahamiyati past bo’lgan model turg’unligiga ta’sir qiluvchi ma’lumotlar olib tashlanadi.
-~Dataset ma’lumotlarini testlash
-~To’g’ri javob yo’q
-~Qaror daraxtidan ma’lumotlarni olib tashlash
-}
-
-Xususiyatlarni ajratib olishga to'liq ta'rif berilgan qatorini toping?{
-=o’qituvchi to’plamdagi ma’lumotlar xususiyatlari o’rganib chiqiladi va bashoratlash, tashxislash, sinflashtirish, qaror qabul qilish uchun kerakli xususiyatlar ajratib olish
-~Qaror qabul qilish daraxti qiymatlari
-~Sinflashtirish masalasini yechish algoritmi to’plami
-~To’g’ri javob yo’q
-}
-
-Neyron tarmoqdagi tugun qiymati 0.5 ga teng. Ushbu tugun ReLU funksiyasi yordamida faollashtirilsa qanday qiymatga o‟zgaradi{
-=0.5
-~1
-~0
-~2
-}
-
-Chiziqli regressiya qaysi mashinali o’qitish algoritmlari tarkibiga kiradi?{
-=O’qituvchili o’qitish
-~O’qituvchisiz o’qitish
-~Reinforcementli o'qitish
-~To’g’ri javob yo’q
-}
-
-Neyron tarmoqdagi tugun qiymati 2.5 ga teng. Ushbu tugun ReLU funksiyasi yordamida faollashtirilsa qanday qiymatga o‟zgaradi{
-=02.май
-~2
-~0
-~03.фев
-}
+� 1. 
+Qiyinlik darajasi - 3
+IPSec ulanishda ishtirok etuvchi qurilmalar o'rtasida IP-paketlarni himoyalash va autentifikatsiya qilish uchun protokollar stekining qaysi qatlamida ishlaydi?Tarmoq sathidaTransport sathida�maliy sathdaKanal sathida� 2.  
+Qiyinlik darajasi - 1
+DNS xizmatining maqsadi nima?tizim nomlarini aniqlash va ularni IP manzillarga aylantirishtarmoq ishlashini qo'llab-quvvatlashvaqtni sinxronlashtirishpaket vaqtini sinxronlashtirish
+� 4. 
+Qiyinlik darajasi - 1
+Ochiq tizimlarning o'zaro ta'sirining 7 sathli modeli nomini ko'rsatingOSITCPIPMAC� 5. 
+Qiyinlik darajasi - 1
+Fayl arxivlarini o'z ichiga olgan Internet-serverlar sizga quyidagilarga imkon beradi:kerakli fayllarni yuklab olishelektron pochta xabarini olish uchuntelekonferensiyalarda ishtirok etishvideo konferentsiyalarni o'tkazish
+� 6. 
+Qiyinlik darajasi - 1
+Fayl uzatish protokoli ko'rsatilgan qatorni ko'rsatingFTPSMTPHTTPtelnet
+� 8. 
+Qiyinlik darajasi - 2
+Lokal tarmoqdagi kompyuterlarni ulash uchun asosan qanday kabel ishlatiladi?O'ralgan juftlik (utp)Koaksial kabelOptik tolaKrossover kabel
+� 9. 
+Qiyinlik darajasi - 2
+192. 168. 10. 51/24 manzilining qaysi qismi tarmoqning identifikatori (manzili) hisoblanadi?192. 168. 10192. 168192192. 168. 10. 51
+� 10. 
+Qiyinlik darajasi - 2
+192. 168. 1. 16/24 manzilining qaysi qismi tarmoq identifikatori (manzili) hisoblanadi?192. 168. 1192192. 168192. 168. 1. 16
+� 11. 
+Qiyinlik darajasi - 2
+192. 168. 3. 36 ning qaysi qismi standart pastki tarmoq niqobi ishlatilgan deb hisoblasak, tarmoq identifikatori (manzil) hisoblanadi?192. 168. 3192. 168192. 168. 3. 36192
+� 12. 
+Qiyinlik darajasi - 2
+192. 168. 10. 60 manzilining qaysi qismi standart pastki tarmoq niqobi qo'llangan bo'lsa, tarmoq identifikatori (manzili) hisoblanadi?192. 168. 10192. 168192192. 168. 10. 60
+� 14. 
+Qiyinlik darajasi - 1
+Quyidagilardan qaysilari onlayn firibgarlik usuli emas?Texnik qo'llab-quvvatlashKardingFishing xabarlari"Nigeriya" xatlari. 
+
+� 16. 
+Qiyinlik darajasi - 1
+Kompyuter tarmog'ining umumlashtirilgan geometrik tavsifi. . . . tarmoq topologiyasitarmoq qurilmalaritarmoq serveritarmoq foydalanuvchilari
+� 17. 
+Qiyinlik darajasi - 1
+Kompyuter tarmog'i protokoli - . . . tarmoqdagi ma'lumotlarni qabul qilish va uzatishni, faollashtirishni tartibga soluvchi qoidalartarmoq trafigining texnik tavsiflaritarmoq foydalanuvchilari harakatlarini qayd qilish uchun elektron jurnallaraudit uchun jurnallar
+� 20. 
+Qiyinlik darajasi - 1
+Mijozlarning fayllarga kirishini boshqaruvchi server qanday nomlanadi? Fayl serveripochta serveriproksi-servervositachilik serveri
+� 21. 
+Qiyinlik darajasi - 1
+Qaysi dastur antivirus emas?DefragNorton AntivirusDr WebAVP
+� 23. 
+Qiyinlik darajasi - 1
+MAC manzilining uzunligi necha baytga teng?6384
+� 24. 
+Qiyinlik darajasi - 1
+IPv4 manzilining uzunligi necha bit?321628128
+� 25. 
+Qiyinlik darajasi - 1
+IPv6 manzili uzunligida nechta bit bor?12832816
+� 26. 
+Qiyinlik darajasi - 1
+IPv4 manzilining uzunligi necha baytga teng?433216
+� 27. 
+Qiyinlik darajasi - 1
+TCP/IP protokoli stekining birinchi qatlamini ko'rsatadigan variantni tanlang. FizikTarmoqTransportIlova
+� 28. 
+Qiyinlik darajasi - 1
+OSI modelining qaysi qatlamida ma'lumotlar freymlar sifatida ifodalanadi?KanalTransportTarmoqTaqdimot
+� 32. 
+Qiyinlik darajasi - 2
+DHCP ning asosiy vazifasi nima?Avtomatik ravishda IP manzillarni ajratadiInternetga kiradiMijoz-server balansini saqlaydiIPv4 ni IPv6 ga o'zgartiradi
+� 33. 
+Qiyinlik darajasi - 2
+Qaysi tarmoq topologiyasi mavjud emas?JurnalYulduzShinaHalqa
+� 34. 
+Qiyinlik darajasi - 2
+Elektron pochta protokoli portini belgilang. 25222123
+� 35. 
+Qiyinlik darajasi - 2
+Elektron pochta protokollari berilgan qatorni belgilang?SMTP, POP, IMAPHTTP, HTTPSDNS, BOOTPDNS, DHCP
+
+� 40. 
+Qiyinlik darajasi - 2
+WAN tarmog'ini yaratish uchun marshrutizatorlarning minimal soni qancha?2453
+
+� 41. 
+Qiyinlik darajasi - 2
+WAN, MAN, LAN larni o'sish tartibida joylashtiring?LAN<MAN<WANWAN<LAN<MANWAN <LAN< WANMAN<LAN<WAN
+� 43. 
+Qiyinlik darajasi - 2
+OSI modelida 7-sathni ko'rsating?Ilova sathiTaqdimot sathiSeans sathiKanal sathi
+� 44. 
+Qiyinlik darajasi - 2
+OSI modelida 6-sathni ko'rsating?Taqdimot sathiIlova sathiSeans sathiKanal sathi
+� 45. 
+Qiyinlik darajasi - 2
+OSI modelida 5-sathni ko'rsating?Seans sathiTaqdimot sathiIlova sathiKanal sathi
+
+
+� 46. 
+Qiyinlik darajasi - 2
+OSI modelida 4-sathni ko'rsating?Transport sathiTaqdimot sathiIlova sathiKanal sathi
+� 47. 
+Qiyinlik darajasi - 2
+OSI modelida 3-sathni ko'rsating?Tarmoq sathiTransport sathiTaqdimot sathiIlova sathi
+� 48. 
+Qiyinlik darajasi - 2
+OSI modelida 2-sathni ko'rsating?Kanal sathiTarmoq sathiTransport sathiTaqdimot sathi
+� 49. 
+Qiyinlik darajasi - 2
+OSI modelida 1-sathni ko'rsating?Fizik sathTarmoq sathiTransport sathiTaqdimot sathi
+� 54. 
+Qiyinlik darajasi - 2
+DDoS hujumlari uchun qanday protokol ishlatiladi?ARPHTTPHTTPSPOP3
+� 55. 
+Qiyinlik darajasi - 2
+Kompyuterning IP manzilini bilish uchun qanday buyruq ishlatiladi?ipconfigifconfigIpconfig/aalShow ip address
+
+� 57. 
+Qiyinlik darajasi - 2
+Amaliy sathda deyarli barcha xizmatlar qaysi sxema bo'yicha ishlaydi?Mijoz-serverkompyuter-foydalanuvchiserver-kompyutermijoz-internet
+� 58. 
+Qiyinlik darajasi - 2
+Himoyalanayotgan resurs to'plami uchun beriladigan ruxsat qoidalari to'plami nima deyiladi?ACLASLAVLACM
+� 59. 
+Qiyinlik darajasi - 2
+Foydalanuvchi autentifikatsiyasini, ruxsatsiz foydalanishdan ma'lumotlarni himoyalashni hamda tarmoq bo'yicha ma'lumotlarni xavfsiz uzatish vositalarini amalga oshiradigan dasturiy-apparat vositalariga kiradigan himoya usulini ko'rsating?TexnikTashkiliy-huquqiyFizikHuquqiy
+� 60. 
+Qiyinlik darajasi - 2
+Amaliy sath protokollaridan axborotlarni olish va uni OSI modelidan foydalanuvchi barcha kompyuterlarga tushunarli formatga o'giruvchi sath nomi? TaqdimotTarmoqAmaliySeans� 61. 
+Qiyinlik darajasi - 2
+Ochiq tizimlar munosabati OSI modeli qaysi tashkilotda ishlab chiqilgan?Standartlashtirish xalqaro tashkilotiElektroaloqa xalqaro ittifoqiTelefoniya va Telegrafiya bo'yicha Xalqaro Maslahat komitetiKompyuter ishlab chiqaruvchilar Yevropa Assotsiatsiyasi
+� 62. 
+Qiyinlik darajasi - 2
+Qaysi protokol servis protokollari va transport protokollari orasida zamonaviy kriptografiya yordamida ma'lumotlar himoyasini ta'minlaydi?SSLPPPSETIPSec
+� 63. 
+Qiyinlik darajasi - 2
+Axborot xavfsizligi tushunchasi o'z ichiga qaysi uch tashkil etuvchilarni oladi?Konfidensiallik, foydalanuvchanlik, butunlilikFoydalanuvchanlik, ishonchlilik, butunlilikKonfidensiallik, ishonchlilik, butunlilikFoydalanuvchanlik, saqlanishlik, butunlilik
+� 64. 
+Qiyinlik darajasi - 2
+Mijoz so'ralgan serverga so'rov yuborib, ma'lumotni so'rab oladi, u so'rovga javoban mijoz qabul qilgan faylni yuboradi.  Bu jarayon qaysi modelga xos?mijoz-serverpeer-to-peerMVCMITM
+� 65. 
+Qiyinlik darajasi - 2
+Har bir so'nggi qurilma (peer) server yoki mijoz sifatida ishlashi mumkin.  Kompyuter bitta ulanish uchun server, boshqasi uchun mijoz vazifasini bajarishi mumkin.  Bu qaysi modelga xos?peer-to-peerMVCMITMmijoz-server
+� 66. 
+Qiyinlik darajasi - 2
+POP3 va IMAP4 ma'lumotni ishonchli yetkazib berish uchun transport darajasida qaysi protokolidan foydalanadilar?TCPIPPPPSMTP
+� 67. 
+Qiyinlik darajasi - 2
+Asosiy maqsadi fayllarni bitta kompyuterdan boshqasiga o'tkazish yoki fayllarni serverlardan mijozlarga va mijozlardan serverlarga ko'chirish bo'lgan protokol qaysi?FTPTFTPHTTPSMTP
+� 68. 
+Qiyinlik darajasi - 2
+Tarmoq sathida xabarlar nima deb nomaladi?pakettrafikprotokolstek
+� 70. 
+Qiyinlik darajasi - 2
+Axborotni uzatish jarayonida hujum qilish orqali, eshitish va o'zgartirish qaysi javobda keltirilgan?EavesdroppingMITMDenial-of-servicePort scanning� 72. 
+Qiyinlik darajasi - 3
+... tizim yoki tarmoq xavfsizlik siyosatini buzib kirishga harakat qilingan usul yoki vositalar aniqlanadi. ruxsatsiz kirishni aniqlash tizimi yordamidatarmoq skanerlari yordamidatarmoqlararo ekranlar yordamidaantivirus yordamida
+� 73. 
+Qiyinlik darajasi - 3
+Elektron pochta sizga ....  yuborish imkonini beradi.  Xabarlar va unga biriktirilgan fayllarniFaqat xabarlarniFaqat fayllarniVideoma'lumotlarni
+� 74. 
+Qiyinlik darajasi - 3
+... - bu da'vo qilingan foydalanuvchi, jarayon yoki qurilmaning haqiqiyligini tekshirish tartibi. autentifikatsiyaidentifikatsiyaavtorizatsiyama'murlash
+� 75. 
+Qiyinlik darajasi - 3
+... - uning egasi haqiqiyligini aniqlash jarayonida tekshiruv axboroti sifatida ishlatiladigan belgilar ketma-ketligi. parolpin kodidentifikatorhaqiqiylikka tekshirish
+
+� 82. 
+Qiyinlik darajasi - 3
+OSI modelidagi qaysi sath IP manzillar bilan ishlaydi?3215
+� 83. 
+Qiyinlik darajasi - 3
+OSI modelidagi qaysi sath MAC manzillari bilan ishlaydi?2134
+� 84. 
+Qiyinlik darajasi - 3
+192. 168. 1. 243 /24 uchun broadcast manzilini aniqlang. 192. 168. 1. 255192. 168. 1. 128192. 168. 1. 256192. 168. 1. 252
+� 87. 
+Qiyinlik darajasi - 3
+Qaysi sinf manzillari faqat tadqiqot maqsadlarida (faqat laboratoriyalarda) qo'llaniladi?DBEC
+� 88. 
+Qiyinlik darajasi - 3
+Lokal IP manzilini global IP manziliga almashtiruvchi texnologiya qaysi?NATOSIprotokolhash
+
+� 91. 
+Qiyinlik darajasi - 3
+Tarmoqdagi barcha kompyuterlar markaziy tugunga ulangan kompyuter tarmog'ining topologiyasi qanday nomlanadi?YulduzShinaHalqaDaraxt
+� 92. 
+Qiyinlik darajasi - 3
+Switch OSI modelining qaysi sathida ishlaydi?2341
+� 93. 
+Qiyinlik darajasi - 3
+Konsentrator (Hub) OSI modelining qaysi sathida ishlaydi?1234
+� 94. 
+Qiyinlik darajasi - 3
+255. 0. 0. 0  tarmoq maskasi(niqobi) qaysi klass(sinf)ga tegishli?ABCD
+� 95. 
+Qiyinlik darajasi - 3
+255. 255. 0. 0  tarmoq maskasi(niqobi) qaysi klass(sinf)ga tegishli?BCDA
+� 98. 
+Qiyinlik darajasi - 3
+Marshrutlashning nechta turi mavjud?2341
+� 103. 
+Qiyinlik darajasi - 1
+POP protokoli qaysi turdagi protokollarni o'z ichiga oladi?pochta protokollariinternet protokollarimarshrutlash protokollarifayllarni uzatish protokollari
+� 104. 
+Qiyinlik darajasi - 1
+Xostlar o'rtasida fayl va ma'lumotlarni almashish uchun qanday protokol ishlatiladi?FTPIPHTTPIPX
+� 109. 
+Qiyinlik darajasi - 1
+Tarmoqning tarmoq ichida taqsimlanishi nima deb ataladi?Qism tarmoq(Subnet)to'liq tarmoq (Fullnet)resurslarni taqsimlashyuklamaning taqsimlanishi
+� 110. 
+Qiyinlik darajasi - 1
+Ma'lumotlarni  ishonchli yetkazib berilishini ta'minlaydigan transport qatlami protokoli qaysi?TCPUDPFTPTFTP
+
+
+� 112. 
+Qiyinlik darajasi - 1
+Foydalanuvchilarni aloqa kanallari va kommutatsiya vositalarini qo?llagan holda o?zaro ma?lumot almashishlari, tarmoqdagi texnik, dasturiy, axborot resurslaridan foydalanishlari uchun yagona tizimga ulangan kompyuterlar to?plami qaysi?Kompyuter tarmog?iKompyuter tizimiInternetIntranet
+� 113. 
+Qiyinlik darajasi - 1
+... - bir ofis, bino ichidagi aloqa tarmog?i. LANPANGANCAN
+� 114. 
+Qiyinlik darajasi - 1
+. . . - tarmoq tugunlarining aloqasi yoki joylashishini aks ettiradi. jismoniy topologiyaaxborotli topologiyamantiqiy topologiyastrukturaviy topologiya
+� 115. 
+Qiyinlik darajasi - 1
+OSI modelining 1-sathida (ya'ni, fizik sathda) ishlaydigan, aloqa uchun tarmoqdagi qurilmalarni birlashtiruvchi tarmoq qurilmasi nima?HubSwitchRouterRepiter
+� 116. 
+Qiyinlik darajasi - 1
+. . . - tugunlar kommunikatsiyaning OSI modelidagi 2 qatlamda ishlovchi tarmoq qurilmalaridir.   "aqlli xab" deb ham yuritiladi. SwitchHubRouterRepiter
+� 118. 
+Qiyinlik darajasi - 1
+Mijozlarga fayllarni boshqarishni beruvchi server qanday nomlanadi?Fayl serveriPochta serveriProksi serverYordamchi server
+� 119. 
+Qiyinlik darajasi - 1
+Global kompyuter tarmog'i:WANMANLANPAN
+� 120. 
+Qiyinlik darajasi - 1
+Tarmoq sathi protokollari qaysi qatorda keltirilgan?IP, ARP, IPSec, ICMP, OSPFTCP, ARP, UDP, ICMP, OSPFUDP, ARP, IPSec, SIP, FTPIP, ARP, PPP, ICMP, TCP
+
+� 121. 
+Qiyinlik darajasi - 1
+. . . - qoidalar axborotni faqat qonuniy foydalanuvchilar tomonidan "o?qilishini" ta?minlaydi. KonfidensiallikYaxlitlikButunlikFoydalanuvchanlik
+� 122. 
+Qiyinlik darajasi - 1
+. . . -ruxsat etilmagan "bajarish" dan himoyalaydi. ButunlikKonfidensiallikOchiqlilikFoydalanuvchanlik
+� 124. 
+Qiyinlik darajasi - 1
+Pochta xodimining xatlarni noqonuniy o?qishi qaysi xavf-xatar turiga kiradi?TovlamachilikShpionajO?g?irlikIntellektual mulkni obro?sizlantirilishi
+� 125. 
+Qiyinlik darajasi - 1
+Firewall butun tarmoq trafigini bloklab qo?yishi qaysi xavf-xatar turiga kiradi?�pparat vositalarining buzilishi yoki ishlashidagi xatoliklarDasturiy hujumlarTexnik talablar jihatidan eskirishShpionaj
+
+� 127. 
+Qiyinlik darajasi - 1
+. . . . . .  usulida testlovchi testlanadigan tarmoq infrastrukturasi haqida hech qanday dastlabki bilimlarga ega bo?lmaydi.  Testlovchi real tajribalarni o?tkazishdan oldin tizim va qurilmalarning turi va joylashuvini aniqlashi lozim.  Bunda tashkilotga tashqaridan real hujumlarni imitatsiyalashga imkon beradi. Black boxWhite boxGrey boxGreen box
+� 130. 
+Qiyinlik darajasi - 1
+Yong'in, toshqin yoki zilzila ma'lumotlarni yo'q qilishiga sabab bo'ladi.  Bu qanday tahdid turi?Tabiiy ofatlarShpionajInson xatoliklariSabotaj
+� 131. 
+Qiyinlik darajasi - 2
+Mahsulot ishlab chiqarish jadvalini o'g'rilash.  Bu qanday tahdid turi?ShpionajInson xatoliklariSabotajTabiiy ofatlar
+� 132. 
+Qiyinlik darajasi - 2
+Xodim tashkilot noutebookini avtoturargohda to'satdan tushirib qo'yishi.  Bu qanday tahdid turi?Inson xatoliklariSabotajTabiiy ofatlarShpionaj
+� 133. 
+Qiyinlik darajasi - 2
+Virus, qurt yoki DOS hujumi dasturiy yoki apparat ta'minotni buzadi.  Bu qanday tahdid turi?Dasturiy hujumlarSabotajTabiiy ofatlarShpionaj
+� 134. 
+Qiyinlik darajasi - 2
+Xatolik dastur yuklanishiga to'sqinlik qiladi.  Bu qanday tahdid turi?Dasturning buzilishi yoki undagi xatoliklarSabotajTabiiy ofatlarShpionaj
+� 135. 
+Qiyinlik darajasi - 2
+Dastur operatsion tizimning yangi versiyasi bilan ishlay olmaydi.  Bu qanday tahdid turi?Texnik talablar jihatidan eskirishDasturning buzilishi yoki undagi xatoliklarTabiiy ofatlarShpionaj
+
+� 136. 
+Qiyinlik darajasi - 2
+Xodim kompyuterining o'g'irlanishi.  Bu qanday tahdid turi?O'g'rilikDasturning buzilishi yoki undagi xatoliklarTabiiy ofatlarShpionaj
+� 138. 
+Qiyinlik darajasi - 2
+. . . .  tarmoq bo'ylab uzatilayotgan axborot oqimini aks ettiradi.  Bu qaysi topologiya?AxborotliJismoniyRuxsatliMantiqiy
+� 139. 
+Qiyinlik darajasi - 2
+. . .  jismoniy topologiya doirasida signallarning harakatini aks ettiradi.  Bu qaysi topologiya?MantiqiyAxborotliJismoniyRuxsatli
+� 140. 
+Qiyinlik darajasi - 2
+Xakerlar tomonidan skanerlashning bunday turini kompaniyalar tomonidan skanerlashdan ajratib bo'lmaydi.  Bu:Zaifliklarni skanerlashFayllarni kuzatishTroyan dasturlarini skanerlashYashirin skanerlash
+� 142. 
+Qiyinlik darajasi - 2
+Qaysi sath ikkita o'zaro ishlovchi hostlar o'rtasida aloqani o'rnatish, boshqarish va yakunlash vazifasini bajaradi?Seans sathiKanal satniTarmoq sathiIlova sathi
+� 143. 
+Qiyinlik darajasi - 2
+Qaysi sath ma'lumotlar patokidagi ma'lumotlarni segmentlash va qayta yig'ish vazifasini bajaradi?Transport sathiIlova sathiTarmoq sathiSeans sathi
+� 147. 
+Qiyinlik darajasi - 2
+Oxirgi tizimlar o'rtasidagi fizik kanal orqali strukturalanmagan bitlar potokini uzatadi.  Bu qaysi sathning vazifasi?Fizik sathTarmoq sathiKanal sathiSeans sathi
+� 149. 
+Qiyinlik darajasi - 2
+Tarmoqlararo ekran(firewall) - bu:avtorizatsiya qilingan ma'lumotlardan tashqari barcha trafikni blokirovka qilish uchun mo'ljallangan tarmoqqa kirishni boshqarish qurilmasivazifasi trafikni imkon qadar tezroq manzilga yetkazish bo'lgan qurilmatarmoq trafigini keshlash qurilmasiTarmoq trafigini shifrlash qurilmasi
+� 150. 
+Qiyinlik darajasi - 2
+Quyidagi protokollardan qaysi biri ilova sathining autentifikatsiya protokoli sifatida ishlatiladi?TACACSDHCPSSHTelnet
+� 151. 
+Qiyinlik darajasi - 2
+Tizim sozlanmalariga masofadn ulanish protokkollarini ko'rsating?SSH, TelnetSSH, RTPFTP, LDPPOP3, LDP
+� 152. 
+Qiyinlik darajasi - 2
+Ish stoliga masofadan ruxsat olish protokoli qaysi javobda ko'rsatilgan?RDPFTPSMTPHTTPS
+� 153. 
+Qiyinlik darajasi - 2
+Quyidagilardan qaysi biri TACACS versiyasiga kirmaydi?TACACS#TACACSTACACS+XTACACS
+� 154. 
+Qiyinlik darajasi - 2
+SMTP protokolini kengaytmasi qaysi javobda to'g'ri keltirilgan?Simple Mail Transfer ProtocolSession Mail Transfer ProtocolSecurity Mail Transfer ProtocolSimple Massege Transfer Protocol
+� 155. 
+Qiyinlik darajasi - 2
+HTTP protokolini kengaytmasi qaysi javobda to'g'ri keltirilgan?Hyper Text Transfer ProtocolHigh Terminal Transfer ProtocolHigh Text Tranzit ProtocolHyper Terminal Tranzit Protocol
+
+� 156. 
+Qiyinlik darajasi - 2
+ICMP protokolini kengaytmasi qaysi javobda to'g'ri keltirilgan?Internet Control Message ProtocolIntranet Control Message ProtocolInternet Connection Message ProtocolIllegal Control Mail Protocol
+� 157. 
+Qiyinlik darajasi - 2
+"Xizmat ko'rsatishdan voz kechish" hujumini toping?DoSDHCP poisoningResource AttackMiTM
+� 158. 
+Qiyinlik darajasi - 2
+"O'rtada turgan odam hujumi" qaysi javobda keltirilgan?MiTMDoSDHCP poisoningResource Attack
+� 159. 
+Qiyinlik darajasi - 2
+Agar sessiya identifikatori kodlanmagan bo'lsa, tajovuzkor seans identifikatorini sotib olishi va sessiyani o'g'irlashi mumkin" bu qaysi hujum turi?Session HijackingMan-in-the-MiddleInformation LeakageBlind Session Attacks
+� 171. 
+Qiyinlik darajasi - 3
+Kompyuter tarmog'ining umumiy geometrik tavsifi:Tarmoq topologiyasiTarmoq qurilmasiTarmoq serveriFoydalanuvchi tarmog'i
+� 173. 
+Qiyinlik darajasi - 3
+S1(config)# line vty 0 15 
+S1(config-line)# password cisco 
+S1(config-line)# login 
+S1(config-line)# end 
+Buyruqlar orqali nimani sozlash mumkin?TelnetSSHConsoleEnable
+� 174. 
+Qiyinlik darajasi - 3
+Port security qaysi tarmoq qurilmalarida sozlanadi?KomutatorMarshrutizatorServerHub
+� 176. 
+Qiyinlik darajasi - 3
+. . . - buzilish aniqlanganda interfeysni error-disabled holatiga o`tkazadi va o`chiradi.  Undan tashqari syslog, SNMP trap, violetion counter ka`bi jurnallashtiruvchilarga xabar jo`natiladi.  Ushbu holatdan chiqarish uchun shutdown va no shutdown buyruqlaridan foydalaniladi. shutdownrestrictprotectportsecurity
+� 178. 
+Qiyinlik darajasi - 3
+Cisco marshrutizatorlarida parolni olib tashlash uchun nimadan foydalaniladi?Configuration registerLog registerXabar registriYozuvlar  registri
+� 179. 
+Qiyinlik darajasi - 3
+Rezervlash protokollari berilgan qatorni toping?STP, RSTPLACP, HTTPSMTP, RSTPPOP, PAgP
+
+� 180. 
+Qiyinlik darajasi - 3
+Agregatsiyalash protokollari berilgan qatorni toping?LACP, PAgPSTP, RIPPOP, PAgPSMTP, RSTP
+� 181. 
+Qiyinlik darajasi - 3
+Port securityni sozlashda qaysi parametrdan foydalaniladi?MAC-manzilIP-manzilQurilma nomiKeng polosali manzil
+� 182. 
+Qiyinlik darajasi - 3
+Dinamik marshrutlash protokollari berilgan qatorni toping?RIP, EIGRP, OSPF, BGPIP route, EIGRP, OSPF, TelnetHTTP, OSPF, POPSSH, IGRP, OSPF, BGP
+� 183. 
+Qiyinlik darajasi - 3
+Manzillarni translatsiya qilish qaysi texnologiya asosida amalga oshiriladi?NATDHCPDNSARP
+� 184. 
+Qiyinlik darajasi - 3
+Troubleshooting nima uchun ishlatiladi?Tarmoq xatoliklarini topish uchunTarmoqni sozlash uchunFiltrlash uchunTestlash uchun
+
+� 185. 
+Qiyinlik darajasi - 3
+AAA serveri qaysi vazifalarni bajaradi?Authentication, Authorization, AccountingAuthentication, Authorization, IdentificationAuthentication, Identification, AccountingIdentification, Authorization, Accounting
+� 188. 
+Qiyinlik darajasi - 3
+Kompyuter orqali kommutatorga murojaat qilib, uni sozlashga imkon beruvchi kabel turini ko'rsating:Konsol kabelKross-over kabelOptik kabelSerial kabel
+
+
+Savollar va javoblar
+1. "Intellektual mulkni obro'sizlantirilishi" tahdidi turi uchun tahdid namunasini tanlang. 
+Dasturiy ta'minot mahsuloti litsenziyalanmagan yoki mualliflik huquqini buzilgan
+Yong'inlar, toshqinlar yoki zilzilalar tufayli ma'lumotlarni yo'q qilish yoki yo'qotish
+Mahsulot ishlab chiqarish jadvalini o'g'irlash
+Pochta xodimi tomonidan xatlarni noqonuniy o'qish
+2. Sabotaj tahdidi turi uchun tahdid namunasini tanlang. 
+Buzg'unchi fayllarni o'chirib tashlaydigan qurtni o'rnatadi
+Dastur xatosi yoki undagi xatolar
+Dastur operatsion tizimning yangi versiyasi bilan ishlay olmaydi
+Xodim tomonidan kompyuter o'g'irlanishi
+3. "Inson xatosi" tahdidi turi uchun tahdid namunasini tanlang. 
+Xodim tashkilotning noutbukini to'xtash joyiga to'satdan tashlab yuboradi
+Xavfsizlik devori barcha tarmoq trafigini bloklashi mumkin
+Virus, qurt yoki DOS hujumi dasturiy ta'minot yoki apparatni yo'q qiladi
+Barcha tizimlarning to'satdan to'xtashi, saqlangan ma'lumotlar yo'q
+4.  "Dasturiy hujumlar" tahdid turi uchun tahdid namunasini tanlang. 
+Virus, qurt yoki DOS hujumi dasturiy ta'minot yoki apparatni yo'q qiladi
+Dasturiy ta'minot mahsuloti litsenziyalanmagan yoki mualliflik huquqini buzadi
+Dastur xatosi yoki undagi xatolar
+Dastur operatsion tizimning yangi versiyasi bilan ishlay olmaydi
+5. Quyidagi misol uchun zaifliklarning ta'sirini (darajasini) aniqlang: Backdoor orqali tashkilot mahsulotini ishlab chiqish texnologiyasi va ilmiy asoslarini o'g'irlash
+Muhim (Major)
+Kichik ta'sir (Small impact)
+O?rta (Significant)
+O'ta muhim (Catastrophic)
+6. Quyidagi misol uchun zaifliklarning ta'sirini (darajasini) aniqlang: Tarmoqda zararli dastur o'rnatilgan
+O?rta (Significant)
+Muhim (Major)
+Kichik ta'sir (Small impact)
+O'ta muhim (Catastrophic)
+7. Quyidagi misol uchun zaifliklarning ta'sirini (darajasini) aniqlang: Qattiq diskning ma'lum bir turi ishlashi uchun qo'shimcha drayverlar yoki testlash talab qilinishi mumkin. 
+Kichik ta'sir (Small impact)
+O?rta (Significant)
+Muhim (Major)
+O'ta muhim (Catastrophic)
+8. Tashkilotni operatsiyalarni to'xtatishga yoki jiddiy uzilishlarga olib keladigan tanqidiy toifaga kiruvchi zaifliklarning ta'sirini (darajasini) aniqlang. 
+O'ta muhim (Catastrophic)
+Kichik ta'sir (Small impact)
+O?rta (Significant)
+Muhim (Major)
+9. Xavfsizlik siyosatiga nima uchun ehtiyoj bor?
+Har xil zaifliklar keltirib chiqaradigan xavfsizlik tahdidlariga qarshi kurashish va ma'lumotlarni yo'qotishdan himoya qilish
+Tashkilotning barcha funksiyalarini ishonchsiz bajarish uchun
+Kompaniyaning tashqi axborot tahdidlariga ta'sirini oshirish
+Tahdidlarni yuzaga kelishidan oldin bashorat qilish va zaifliklarni aniqlash orqali xavfsizlikni buzish ehtimolini oshirish. 
+10. Xavfsizlik siyosati nima uchun kerak?
+Qurilmalardan foydalanish va ma'lumotlar transferining monitoringlanishi va nazoratlanishi
+muammolarga tezda javob berish va ishlamay qolishi uchun tarmoqning yomon ishlashi uchun
+boshqaruv stressini kamaytirish xarajatlarni oshiradi
+ma'lumotlar va tarmoq xavfsizligini kamaytirish va xavflarni oshirish
+11. Tashkilot tarmoq xavfsizligi uchun qonuniy va ichki talablarni qanday ishlab chiqadi?
+siyosatlar yordamida
+protseduralar orqali
+qonunlar yordamida
+ko'rsatmalar bilan
+12. Tashkilot siyosatini amalga oshirish jarayonini amalga oshiradigan ketma-ket qadamlar majmui qanday nomlanadi?
+Muolajalar
+Standartlar
+Umumiy qoidalar
+Qonunlar
+13. Internetdagi elektron pochta manzili belgilangan: user_name@tuit. uz.  Yuqori darajadagi domen nomini aniqlang?
+uz
+tuit. uz
+user_name @ tuit. . uz _ _
+o'qish
+14. Xavfsizlik siyosatini amalga oshirish usullarini qanday tavsiflash mumkin?
+standartlar
+ko'rsatmalar
+protseduralar
+normativ hujjatlar
+15. Xodimlar tomonidan qonunlarga rioya qilishning kafolati nima?
+Normativ hujjatlar
+Ko'rsatmalar
+Protseduralar
+Qonunlar
+16. Xavfsizlik siyosati ierarxiyasining qaysi bo'limi xavfsizlik bosqichlari, xavfsizlik tartib-qoidalari, ish jarayonlari va hujjatlar bilan bog'liq?
+Siyosat tavsifi
+Xavfsizlik talablari
+Elementlarni joylashtirish arxitekturasi
+Harakat xavfsizligi tushunchasi
+17. Odatdagi siyosat mazmuni 5 ta asosiy elementdan iborat.  Siyosat nima uchun tuzilganligi haqida batafsil tushuntirishni ifodalovchi elementni ko'rsating?
+Maqsad
+Harakat sohasi
+Qoidalar va javobgarliklar
+Sanksiyalar va buzilishlar
+18. Odatdagi siyosat mazmuni 5 ta asosiy elementdan iborat.  Kim va nimani qamrab olishi haqida ma'lumotni o'z ichiga olgan elementni belgilang?
+Harakat sohasi
+Kontaktlar
+Qoidalar va javobgarliklar
+Sanksiyalar va buzilishlar
+19. Odatdagi siyosat mazmuni 5 ta asosiy elementdan iborat.  Xodimlar va boshqaruv uchun mo'ljallangan elementni belgilang
+Qoidalar va javobgarliklar
+Sanksiyalar va buzilishlar
+Harakat sohasi
+Kontaktlar
+20. Odatdagi siyosat mazmuni 5 ta asosiy elementdan iborat.  Mijozlar va foydalanuvchilar rioya qilishi kerak b�'lgan ruxsat berish/ rad etish jarayonini belgilaydi?
+Sanksiyalar va huquqbuzarliklar
+Qo'llash doirasi
+Kontaktlar
+Qoidalar va javobgarliklar
+21. Odatdagi siyosat mazmuni 5 ta asosiy elementdan iborat.  Siyosat va/yoki boshqa qoidabuzarliklar sodir bo'lgan taqdirda kimga murojaat qilish kerakligi haqidagi ma'lumotni o'z ichiga olgan elementni belgilang
+Kontaktlar
+Sanksiyalar va huquqbuzarliklar
+Qo'llash doirasi
+Qoidalar va javobgarliklar
+22. Foydalanishni cheklash yoki taqiqlash berilgan variantni ko'rsating
+Tuhmat (sabotaj) materiallarini yaratish yoki uzatish
+"Foyda olish" maqsadida biznesda qatnashishdan bosh tortish
+Notijorat hujjatlarni chop etishni rad etish (ish jarayoniga aloqador bo'lmagan hujjatlar)
+Internetdan foydalanish, faqat kompaniya faoliyati bilan bog'liq hollarda uskunalardan foydalanish
+23. Foydalanishni cheklash yoki taqiqlash berilgan variantni ko'rsating
+Qonun hujjatlarida yoki tashkilotning ichki qoidalarida belgilangan talablarga rioya qilmaslik
+Internetdan foydalanish, faqat kompaniya faoliyati bilan bog'liq hollarda uskunalardan foydalanish
+"Foyda olish" maqsadida biznesda qatnashishdan bosh tortish
+Notijorat hujjatlarni chop etishni rad etish (ish jarayoniga aloqador bo'lmagan hujjatlar)
+24. Foydalanishni cheklash yoki taqiqlash berilgan variantni ko'rsating
+Qaysi serverda joylashishidan qat'iy nazar tashkilot faoliyati bilan bog'liq shaxsiy veb sahifalarni ochish va yuritish
+Internetdan foydalanish, faqat kompaniya faoliyati bilan bog'liq hollarda uskunalardan foydalanish
+"Foyda olish" maqsadida biznesda qatnashishdan bosh tortish
+Notijorat hujjatlarni chop etishni rad etish (ish jarayoniga aloqador bo'lmagan hujjatlar)
+25. "XAVFSIZLIK SHLYUZLARINI Q�'LLAGAN HOLDA  TARMOQLARARO XAVFSIZLIKNI TA'MINLASH  UCHUN KOMMUNIKATSIYALAR" deb nomlanuvchi O'zR standarti ro?yxatini ko?rsatadigan variantni tanlang . 
+O'z DSt ISO/IEC 27033-4:2016
+O'z DSt ISO/IEC 27033-5:2016
+O'z DSt ISO/IEC 27033-3:2016
+O'z DSt ISO/IEC 27033-1:2016
+26. "ETALON TARMOQ SENARIYLARI.  TAHDIDLAR,  LOYIHALASHTIRISH USULLARI VA BOSHQARUV  MASALALARI" deb nomlanuvchi O'zR standarti ro'yxatini ko'rsatadigan variantni tanlang . 
+O'z DSt ISO/IEC 27033-3:2016
+O'z DSt ISO/IEC 27033-4:2016
+O'z DSt ISO/IEC 27033-1:2016
+O'z DSt ISO/IEC 27033-2:2016
+27. "�AVFSIZLIKNI TA'MINLASH USULLARI. TARMOQ XAVFSIZLIGI.  1-QISM. SHARH VA KONSEPSIYALAR" deb ataladigan O'zR standarti ro'yxati keltirilgan variantni tanlang . 
+O'z DSt ISO/IEC 27033-1:2016
+O'z DSt ISO/IEC 27033-3:2016
+O'z DSt ISO/IEC 27033-2:2016
+O'z DSt ISO/IEC 27033-4:2016
+28. "XAVFSIZLIK AMALIYOTLARI.  TARMOQ XAVFSIZLIGI.  TARMOQ XAVFSIZLIGINI LOYIHALASHTIRISH VA JORIY ETISH B�'YICHA RAXBARIY K�'RSATMALAR" deb nomlanuvchi O'zR standarti ro'yxati keltirilgan variantni tanlang . 
+O'z DSt ISO/IEC 27033-2:2016
+O'z DSt ISO/IEC 27033-4:2016
+O'z DSt ISO/IEC 27033-3:2016
+O'z DSt ISO/IEC 27033-1:2016
+29. "XAVFSIZLIK USULLARI.  TARMOQ XAVFSIZLIGI.  VIRTUAL HUSUSIY TARMOQLARNI Q�'LLAGAN  XOLDA TARMOQLARARO XAVFSIZLIKNI  TA'MINLASH UCHUN KOMMUNIKATSIYALAR" deb nomlanuvchi O?zR standarti berilgan variantni tanlang . 
+O'z DSt ISO/IEC 27033-5:2016
+O'z DSt ISO/IEC 27033-4:2016
+O'z DSt ISO/IEC 27033-2:2016
+O'z DSt ISO/IEC 27033-3:2016
+30. Foydalana olishlilikni boshqarish kabi xavfsizlik talabi uchun tarmoq xavfsizligi usuli qanday ta'minlanadi?
+Kirish uchun ruxsatnomalar tizimi (identifikatsiya kartochkalari), ACL, majburiyatlarni taqsimlanishi
+Soddalashtirilgan ro'yxatga olish / parol, raqamli sertifikatlar, elektron raqamli imzo, TLS 1. 2 versiyasi, SSO, SNAR
+Qayta yozish va zaxiralash, xavfsizlik devorlari, IDS / IPS ( DoS hujumlarini bloklash uchun), biznesning uzluksizligi, tarmoqni boshqarish va SLA bilan xizmatlarni boshqarish
+IPSec / L2TP, shaxsiy havolalar, individual tarmoqlar
+31. Qaysi variantda aloqa xavfsizligi kabi xavfsizlik talabi bilan tarmoq xavfsizligini ta'minlash usuliga misol keltirilgan?
+IPSec/L2TP, xususiy aloqa liniyalari, moslashtirilgan tarmoqlar
+Shifrlash, kirishni boshqarish ro'yxati, faylga kirish
+Voqealarni yozib olish, rolga asoslangan boshqaruv va raqamli imzo
+IPSec HMAC, davriy monitoring, antivirus dasturi
+32. Autentifikatsiya qilish xavfsizlik talabi uchun tarmoq xavfsizligi usuli qanday amalga oshiriladi?
+Tizimga kirishni soddalashtirilgan r�'yxatdan �'tkazish/parol, raqamli sertifikatlar, elektron raqamli imzo, TLS ning 1. 2 versiyasi, SSO,CHAP
+Voqealarni yozib olish, rolga asoslangan boshqaruv va raqamli imzo
+Kirish avtorizatsiya tizimi (identifikatsiya kartalari), ACL, majburiyatlarni taqsimlash
+IPSec HMAC, davriy monitoring, antivirus dasturi
+33. Qaysi variant foydalana olishlilik xavfsizlik talabi bilan tarmoq xavfsizligini ta'minlash usuli amalga oshiriladi?
+Rezerv nusxa olish, tarmoqlararo ekranlar, IDS/IPS (DoS hujumlarini  blokirovka qilish uchun), biznesning uzluksizligi, tarmoq boshqaruvi va SLA bilan xizmatlarni  boshqarish
+Shifrlash, kirishni boshqarish ro'yxati, faylga kirish
+Davriy nazorat, virusga qarshi dastur
+Voqealarni yozib olish, rolga asoslangan boshqaruv va raqamli imzo
+34. Qaysi variant konfidensiallik kabi xavfsizlik talabi bilan tarmoq xavfsizligini ta'minlash usuli amalga oshiriladi?
+Shifrlash (3DES, AES, shuningdek O'z DSt 1105 da keltirilgan shifrlash algoritmlari),  foydalana olishlilikni boshqarish r�'yxati, fayllardan foydalana olishlik huquqi
+Voqealarni yozib olish, rolga asoslangan boshqaruv va raqamli imzo
+Davriy nazorat, virusga qarshi dastur
+Voqealarni yozib olish, rolga asoslangan boshqaruv va raqamli imzo
+35. Qaysi variant yaxlitlik xavfsizlik talabi bilan tarmoq xavfsizligini ta'minlash usuli amalga oshiriladi?
+IPSec HMAC (SHA-256), davriy monitoring, antivirus dasturi
+Voqealarni yozib olish, rolga asoslangan boshqaruv va raqamli imzo
+Soddalashtirilgan ro'yxatga olish / parol, raqamli sertifikatlar, elektron raqamli imzo, TLS 1. 2 versiyasi, SSO, CHAP
+IPSec / L2TP, shaxsiy havolalar, individual tarmoqlar
+36. Rad etmaslik xavfsizlik talabi uchun tarmoq xavfsizligi usuli qanday amalga oshiriladi?
+Hodisalarni r�'yxatga olish, rollar asosida foydalana olishlilikni boshqarish va elektron raqamli imzolar
+Soddalashtirilgan ro'yxatga olish / parol, raqamli sertifikatlar, elektron raqamli imzo, TLS 1. 2 versiyasi, SSO, SNAR
+IPSec HMAC (SHA-256), davriy monitoring, antivirus dasturi
+Qayta yozish va zaxiralash, xavfsizlik devorlari, IDS/IPS ( DoS hujumlarini bloklash uchun), tarmoqni boshqarish va SLA bilan xizmatlarni boshqarish
+37. IPSec ulanishda ishtirok etuvchi qurilmalar o'rtasidagi IP-paketlarni himoyalash va autentifikatsiya qilish uchun protokollar stekining qaysi sathida ishlaydi?
+tarmoq sathida
+transport sathida
+ilova sathida
+taqdimot darajasida
+38. DNS xizmatining asosiy maqsadi nima?
+IP-manzillarda yoki TCP/IP tarmoqlarida domenlarning belgili nomlarini tashkil etish imkoniyatini beradigan domen nomi xizmati
+tarmoq ishlashini qo'llab-quvvatlash
+paket vaqtini sinxronlashtirish
+javob vaqtini sinxronlashtirish
+39. Quyidagilardan qaysi biri onlayn firibgarlik usuli emas?
+Texnik qo'llab-quvvatlash
+Karding
+Fishing xabarlari
+"Nigeriya" harflari
+40. Kompyuterlarni lokal tarmoqqa ulash uchun asosan qaysi kabeldan foydalaniladi?
+o'ralgan juftlik(utp)
+koaksial kabel
+optik tola
+krossover kabel
+41. WWW xizmatlaridan foydalanishning asosiy protokoli . . . 
+HTTP
+TELNET
+FTP
+SMTP
+42. Ochiq tizimlarning o'zaro ta'sirining 7 darajali modeli nomini ko'rsating
+OSI
+TCP
+IP
+MAC
+43. Fayl uzatish protokoli ko'rsatadigan variantni tanlang
+FTP
+SMTP
+http
+Telnet
+44. Dastur operatsion tizimning yangi versiyasi bilan ishlashi mumkin emasligini tavsiflovchi tahdid turi berilgan variantni tanlang?
+Texnik talablar jihatidan eskirish
+Dastur xatosi yoki undagi xatolar
+O'g'irlik
+Sabotaj
+45. 192. 168. 10. 51 manzilining qaysi qismi standart tarmoq maskasi qo'llangan bo'lsa, tarmoq identifikatori (manzili) hisoblanadi?
+192. 168. 10
+192. 168
+192
+192. 168. 10. 51
+46. 192. 168. 1. 16 ning qaysi qismi standart tarmoq niqobi ishlatilgan deb hisoblasak, tarmoq identifikatori (manzili) hisoblanadi?
+192. 168. 1
+192
+192. 168
+192. 168. 1. 16
+47. 192. 168. 3. 36 ning qaysi qismi standart tarmoq niqobi ishlatilgan deb hisoblasak, tarmoq identifikatori (manzili) hisoblanadi?
+192. 168. 3
+192. 168
+192. 168. 3. 36
+192
+48. 192. 168. 10. 60 manzilining qaysi qismi standart tarmoq maskasi qo'llangan bo'lsa, tarmoq identifikatori (manzili) hisoblanadi?
+192. 168. 10
+192. 168
+192
+192. 168. 10. 60
+49. Fayl arxivlarini o'z ichiga olgan internet-serverlar . . . 
+kerakli fayllarni yuklab olish uchun ishlatiladi
+elektron pochta xabarini olish uchun ishlatiladi
+telekonferensiyalarda ishtirok etish ishlatiladi
+video konferensiyalarni o'tkazish ishlatiladi
+50. Kompyuter tarmog'ining umumlashtirilgan geometrik tavsifi . . . 
+tarmoq topologiyasi
+tarmoq qurilmalari
+tarmoq serveri
+tarmoq foydalanuvchilari
+51. Kompyuter tarmog'i protokoli - bu. . . 
+tarmoqdagi ma'lumotlarni qabul qilish va uzatish, faollashtirishni tartibga soluvchi qoidalar
+tarmoq trafigining xususiyatlari
+tarmoq foydalanuvchilari harakatlarini qayd qilish uchun elektron jurnallar
+audit jurnallari
+52. Tarmoq sathida axborot almashinuvining asosiy birligi nima?
+paket
+Bit
+kanal
+so'z
+53. Mijozlarning fayllarga kirishini boshqaruvchi server qanday nomlanadi?
+Fayl serveri
+pochta serveri
+Proksi-server
+Mediatsiya serveri
+54. Qaysi dastur antivirus emas?
+Defrag
+Norton Antivirus
+Dr veb
+AVP
+55. Qaysi texnologiya taqsimlangan ishlov berish texnologiyasi bo'lib, unda umumiy hisoblash resurslari, dasturiy ta'minot va ma'lumotlar foydalanuvchilarga Internet orqali xizmat sifatida taqdim etiladi?
+bulutli texnologiyalar
+DBMS
+blokcheyn
+ADSL
+56. MAC manzilining uzunligi necha baytga teng?
+6
+3
+8
+4
+57. IPv4 manzilining uzunligi necha bit?
+32
+16
+28
+128
+58. IPv6 manzili uzunligida necha bit?
+128
+64
+32
+sakkiz
+59. IPv4 manzilining uzunligi necha baytga teng?
+4
+32
+16
+3
+60. TCP/IP protokoli stekining birinchi sathi ko'rsatadigan variantni tanlang
+fizik
+tarmoq
+transport
+qo'llaniladi
+61. OSI modelining qaysi sathida ma'lumotlar freymlar sifatida ifodalanadi?
+kanal
+transport
+tarmoq
+ilova
+62. Protokol nima?
+kompyuter tarmog'i aloqa standarti
+LAN qurilmasi
+kompyuterning aloqa kanallari orqali fayllarni yuborish qobiliyati
+elektron pochta orqali xabarlarni yuborish uchun standart
+63. DHCP ning asosiy maqsadi nima?
+avtomatik ravishda IP manzillarni ajratish
+mijoz-server balansini saqlaydi
+internetga kirish
+IPv4 ni IPv6 ga aylantiradi
+64. Qaysi tarmoq topologiyasi mavjud emas?
+Jurnal
+Yulduz
+Shina
+halqa
+65. Elektron pochta protokollari ro'yxatini ko'rsatadigan variantni belgilang
+SMTP, POP, IMAP
+HTTP, HTTPS
+DNS, BOOTP
+DNS, DHCP
+66. Optik kabelda ma'lumot qanday ko'rinadi?
+Nur
+puls
+chastota
+harorat
+67. Qaysi kabel odatdagi diametri 1 mm bo'lgan ikkita izolyatsiyalangan mis simlardan iborat?
+o'ralgan juftlik(utp)
+koaksial
+optik tolali
+MAREA
+68. WAN tarmog'ini yaratish uchun marshrutizatorlarning minimal soni qancha?
+2
+4
+1
+3
+69. WAN, MAN, LAN ni o'sish tartibida joylashtiring
+LAN<MAN<WAN
+WAN<LAN<MAN
+WAN <LAN< WAN
+MAN<LAN<WAN
+70. OSI modelida 7-sathini belgilang?
+ilova 
+taqdimot 
+seans 
+kanal 
+71. OSI modelida 6- sathini belgilang?
+taqdimot 
+ilova 
+seans 
+kanal 
+72. OSI modelidagi 5- sathini belgilang?
+seans 
+taqdimot 
+ilova 
+kanal 
+73. OSI modelidagi 4- sathini belgilang?
+transport 
+taqdimot 
+ilova 
+taqdimot 
+74. OSI modelida 3- sathini belgilang?
+tarmoq 
+taqdimot 
+transport 
+sessiya 
+75. OSI modelida 2- sathini belgilang?
+havola 
+taqdimot 
+sessiya 
+dastur 
+76. OSI modelidagi 1- sathini belgilang?
+fizik 
+taqdimot 
+dastur 
+sessiya 
+77. END DIVECES ga qaysi qurilmalar kiradi ?
+kompyuter, noutbuk, server
+kompyuter, server , router
+router , switch , server
+router , kalit , kompyuter
+78. OSI modelida nechta qatlam mavjud?
+7
+6
+5
+4
+79. DDoS hujumlari uchun qanday protokol ishlatiladi ?
+ARP
+http
+HTTPS
+POP3
+80. Windows buyruq satri orqali kompyuterning IP manzilini bilish uchun qanday buyruq ishlatiladi ?
+ipconfig
+ifconfig
+ifconfig/all
+show ip address
+81. Kafolatlangan ma'lumotlarni yetkazib berishni ta'minlovchi protokol qanday nomlanadi?
+TCP
+POP3
+FTP
+TFTP
+82. Himoyalangan resurslar to'plamini belgilaydigan kirish qoidalari to'plami nima?
+ACL
+ASL
+AVL
+ACM
+83. Tarmoq ichidagi tarmoq taqsimoti nomini ko'rsatilgan variantni tanlang?
+qism tarmoq (subnet)
+yuklama taqsimoti
+resurslarni taqsimlash
+to'liq tarmoq ( Fullnet )
+84. Qanday himoya usullari foydalanuvchi autentifikatsiya protseduralarini bajaradigan dasturiy va apparat vositalarini, ma'lumotlarni ruxsatsiz kirish va o'qishdan himoya qilishni, shuningdek, tarmoqlar orqali ma'lumotlarni xavfsiz uzatish vositalarini o'z ichiga oladi?
+Texnik
+Tashkiliy va huquqiy
+Jismoniy
+Huquqiy
+85. Ilova sath protokollaridan ma'lumotlarni qabul qiluvchi va uni OSI modelidan foydalangan holda barcha kompyuterlar tushunadigan formatga aylantiruvchi sath qanday nomlanadi?
+taqdimot
+tarmoq
+ilova
+seans
+86. Qaysi tashkilot OSI modelini ishlab chiqqan?
+Xalqaro standartlashtirish tashkiloti
+Xalqaro elektraloqa ittifoqi
+Telefoniya va telegrafiya bo?yicha xalqaro maslahat qo?mitasi
+Yevropa kompyuter ishlab chiqaruvchilar uyushmasi
+87. Qaysi protokol zamonaviy kriptografiyadan foydalangan holda xizmat protokollari va transport protokollari o'rtasidagi ma'lumotlarni himoya qiladi?
+SSL
+PPP
+SET
+IPSec
+88. "Axborot xavfsizligi" tushunchasining uchta tarkibiy qismi nimalardan iborat?
+Konfidensiallik, foydalanuvchanlik va butunlik
+Konfidensiallik, foydalanuvchanlik va tekshirish imkoniyati
+Konfidensiallik, tekshiriluvchanlik va yaxlitlik
+Konfidensiallik, chidamlilik va mavjudlik
+89. Mijoz so'ralgan serverga so'rov yuboradi va so'rovga javoban mijoz tomonidan olingan faylni yuboradigan ma'lumotni so'raydi.  Ushbu jarayon uchun qaysi model xosdir?
+mijoz-server
+nuqta - nuqta(peer-to-peer)  
+MVC
+MITM
+90. Har bir oxirgi qurilma server yoki mijoz vazifasini bajarishi mumkin.  Kompyuter bir ulanish uchun server va boshqa ulanish uchun mijoz vazifasini bajarishi mumkin.  Bu qanday model?
+nuqta - nuqta(peer-to-peer) 
+mijoz-server
+MVC
+MITM
+91. POP3 va IMAP4 ma'lumotlarni xavfsiz yetkazib berish uchun qanday transport qatlami protokolidan foydalanadi?
+TCP
+IP
+PPP
+SMTP
+92. Asosiy maqsadi fayllarni bir kompyuterdan ikkinchisiga o'tkazish yoki fayllarni serverlardan mijozlarga va mijozlardan serverlarga o'tkazish bo'lgan protokol nima?
+FTP
+TFTP
+http
+SMTP
+93. Tarmoq sathidagi ma'lumotlar birligining nomi nima?
+paket
+trafik
+protokol
+stack
+94. Ma'lumotlarni tinglash va uzatish jarayonidagi o'zgarishlar hujumi ko'rsatilgan variantni tanlang. 
+Eavesdropping
+DDoS
+Port scanning
+Denial-of-service
+95. Qaysi protokol tarmoq orqali uzatiladigan ma'lumotlarning maxfiyligini ta'minlaydi, ya'ni faqat jo'natuvchi va qabul qiluvchi ma'lumotlarning shaffofligini va paketlar autentifikatsiyasining ishlashini tushunishi mumkinmi?
+IPsec
+IP
+PPP
+IPX
+96. . . . . . yordamida tizim yoki tarmoq xavfsizlik siyosatini buzib kirishga harakat qilingan usul yoki vositalar aniqlanadi.  Nuqtalar o'rniga to'g'ri javobni belgilang. 
+hujumlarni aniqlash tizimi 
+tarmoq skanerlaridan foydalanish
+xavfsizlik devorlari 
+antivirusdan foydalanish
+97. Elektron pochta xizmatlari sizga . . . . yuborish imkonini beradi.  Nuqtalar o'rniga to'g'ri javobni belgilang. 
+xabarlar va undagi qo'shimcha ilovalar
+faqat xabarlar
+faqat fayllar
+video tasvirlar
+98. Aniqlangan foydalanuvchini jarayon yoki qurilmaga kiritilgan paroli haqiqiyligini tekshirish tartibi qanday nomlanadi?
+autentifikatsiya
+ruxsat
+identifikatsiya
+boshqaruv
+99. Uning egasining haqiqiyligini aniqlash jarayonida axborot nazorati sifatida foydalaniladigan belgilar ketma-ketligi qanday nomlanadi?
+parol
+yaxlitligini tekshirish
+shifrlangan matn
+xabar dayjesti
+100. TCP/IP protokoli stekida nechta sath mavjud?
+4 
+5 
+6 
+7
 
